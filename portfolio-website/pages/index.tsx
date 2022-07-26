@@ -1,10 +1,12 @@
 import type { NextPage } from "next";
-import Title from "../components/Title";
+import Hero from "../components/Hero";
+import Header from "../components/Title";
 
 const Home: NextPage = () => {
   return (
     <div>
-      <Title />
+      <Header />
+      <Hero />
     </div>
   );
 };
