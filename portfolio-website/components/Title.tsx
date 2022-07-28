@@ -5,15 +5,12 @@ const Header = () => {
   return (
     <div className="flex flex-row w-full justify-between content-center items-center p-8">
       <div className="flex flex-col">
-        <h1 className=" text-5xl text-slate-50 font-bold fancy-title">
-          George Onisiforou
-        </h1>
-        <h2 className="self-end text-slate-400 text-2xl">Software Developer</h2>
+        <h1 className=" text-5xl text-slate-50 font-bold fancy-title">GO.</h1>
       </div>
 
       <div className="flex flex-col">
-        <div className="text-slate-50 text-l font-bold">Based in Limassol</div>
-        <div className="text-slate-50 text-l font-bold">
+        <div className="text-slate-50 text-xl">Based in Limassol</div>
+        <div className="text-slate-50 text-xl">
           <a
             href="https://www.google.com/maps/@34.9753931,33.6807325,8.92z"
             target="_blank"
@@ -25,10 +22,10 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="text-slate-50 text-l font-bold currentWork">
+      <div className="text-slate-50 text-xl currentWork">
         Currently Software Engineer Intern at VasLabs Ltd
       </div>
-      <div className="text-slate-50 text-xl font-bold flex flex-row">
+      <div className="text-slate-50 text-xl font-medium flex flex-row">
         <ul className="flex flex-row">
           <li className="mr-2 hover:text-slate-400 fancy-link">
             <Link href="/">Projects</Link>
