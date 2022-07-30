@@ -1,8 +1,22 @@
 import React from "react";
 import Image from "next/image";
 import mypic from "../assets/images/profilepic.jpg";
+import { Fade } from "react-awesome-reveal";
+import Reveal from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
 
 export default function Hero() {
+  const customAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translate3d(-200px, -100px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+`;
   return (
     <div className="flex flex-col content-between items-stretch place-content-between">
       <div className="flex items-center content-center">
@@ -16,15 +30,18 @@ export default function Hero() {
           />
         </div>
         <div className="flex flex-col ml-32 mt-20 relative">
-          <h1 className=" text-8xl text-slate-50 font-medium fancy-title">
-            GEORGE ONISIFOROU
-          </h1>
-          <h2 className="absolute top-48 right-60 text-slate-400 text-2xl mb-16">
+          <Reveal keyframes={customAnimation}>
+            <h1 className=" text-8xl text-slate-800 font-medium fancy-title">
+              GEORGE ONISIFOROU
+            </h1>
+          </Reveal>
+
+          <h2 className="absolute top-48 right-60 text-slate-600 text-2xl mb-16">
             Software Developer
           </h2>
         </div>
       </div>
-      <div className="flex justify-around mt-32 mb-12">
+      <div className="flex justify-end mr-52 mt-32 mb-12">
         <div className=" text-lg max-w-xl">
           <h3>
             Newly born Web Developer with a strong lean on the frontend side. I
