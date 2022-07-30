@@ -1,5 +1,8 @@
 import React from "react";
 import { BiRightArrow } from "react-icons/bi";
+import Reveal from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
+import Technology from "./Technology";
 
 export default function Technologies() {
   const technologies1 = [
@@ -17,31 +20,44 @@ export default function Technologies() {
     { name: "TypeScript", image: "", id: 9 },
     { name: "TailwindCSS", image: "", id: 10 },
   ];
+
+  const customAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translate(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+`;
+
   return (
-    <div className="">
+    <div>
       <h3 className="ml-32 text-3xl font-semibold">Technologies</h3>
       <div className="flex flex-row justify-center text-center p-16 text-3xl font-light">
         <div className="pr-32">
           <ul>
             {technologies1.map((tech, key) => (
-              <li className="p-2" key={tech.id}>
-                <div className="flex">
-                  <BiRightArrow className="mr-8" />
-                  {tech.name}
-                </div>
-              </li>
+              <Reveal key="" keyframes={customAnimation} triggerOnce>
+                <Technology tech={tech} />
+                {/* <li className="p-2" key={tech.id}>
+                  <div className="flex">
+                    <BiRightArrow className="mr-8" />
+                    {tech.name}
+                  </div>
+                </li> */}
+              </Reveal>
             ))}
           </ul>
         </div>
         <div className="pl-32">
           <ul>
             {technologies2.map((tech, key) => (
-              <li className="p-2" key={tech.id}>
-                <div className="flex">
-                  <BiRightArrow className="mr-8" />
-                  {tech.name}
-                </div>
-              </li>
+              <Reveal key="" keyframes={customAnimation} triggerOnce>
+                <Technology tech={tech} />
+              </Reveal>
             ))}
           </ul>
         </div>

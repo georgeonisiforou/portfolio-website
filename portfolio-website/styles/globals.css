@@ -135,3 +135,7 @@ a {
 .footer {
   opacity: 1;
 }
+
+.email:hover {
+  cursor: pointer;
+}

@@ -10,6 +10,8 @@ import nodejslogo from "../assets/images/nodejs-svgrepo-com.svg";
 import reactlogo from "../assets/images/react-svgrepo-com.svg";
 import tailwindlogo from "../assets/images/tailwindcss-svgrepo-com.svg";
 import typescriptlogo from "../assets/images/typescript-svgrepo-com.svg";
+import Reveal from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
 
 export default function TechnologiesLogos() {
   const logos = [
@@ -24,19 +26,34 @@ export default function TechnologiesLogos() {
     tailwindlogo,
     typescriptlogo,
   ];
+
+  const customAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+`;
+
   return (
     <div className="flex justify-center m-8">
-      <div className=" flex justify-center p-8 flex-wrap max-w-5xl border-slate-400">
+      <div className=" flex justify-center p-8 flex-wrap max-w-5xl">
         {logos.map((logo, key) => (
-          <div key="" className="m-8">
-            <Image
-              src={logo}
-              width="70px"
-              height="70px"
-              alt="tech-logo"
-              key=""
-            />
-          </div>
+          <Reveal key="" keyframes={customAnimation} triggerOnce>
+            <div key="" className="m-8">
+              <Image
+                src={logo}
+                width="70px"
+                height="70px"
+                alt="tech-logo"
+                key=""
+              />
+            </div>
+          </Reveal>
         ))}
       </div>
     </div>

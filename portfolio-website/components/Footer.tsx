@@ -4,7 +4,7 @@ import { AttentionSeeker, Fade, Slide } from "react-awesome-reveal";
 
 export default function Footer() {
   return (
-    <Fade>
+    <Fade delay={750}>
       <div className="flex justify-between items-center p-8 font-semibold footer">
         <div className="text-lg">
           <h4>George Onisiforou</h4>
