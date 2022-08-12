@@ -37,6 +37,10 @@ a {
   text-decoration: none;
 }
 
+a:active {
+  color: black;
+}
+
 .fancy-link {
   position: relative;
 }
@@ -136,6 +140,68 @@ a {
   opacity: 1;
 }
 
+.hobby-link {
+  position: relative;
+}
+
+.hobby-link:hover {
+  transition: color 250ms ease-in;
+}
+
+.hobby-link::after {
+  position: absolute;
+  content: "";
+  left: 0;
+
+  bottom: -5px;
+  height: 2px;
+  width: 100%;
+  background: rgb(9, 10, 11);
+  transform: scaleX(0);
+  transition: transform 250ms ease-in;
+  transform-origin: right;
+}
+
+.hobby-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+.hobbyContainer {
+  animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .email:hover {
   cursor: pointer;
+}
+
+.email:hover > .clickToCopy {
+  transition: opacity 250ms ease-in;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.hobbyText {
+  animation: fade-in 750ms ease-in;
+}
+
+@keyframes click {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
