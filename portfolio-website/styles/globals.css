@@ -31,8 +31,6 @@ body {
   margin: 0;
   font-family: "PP Radio Grotesk";
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
 }
 
 .technologiesContainer {
@@ -151,6 +149,53 @@ body {
   top: 0;
   transition: all 2s ease-in-out;
   background-image: linear-gradient(rgb(148 163 184), transparent);
+}
+
+.toggleMenu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.toggleMenu:hover {
+  transform: rotate(360deg);
+}
+
+.mobileMenu {
+  display: none;
+}
+
+.showMenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 5rem;
+}
+
+.mobMenuItem {
+  width: 100%;
+  text-align: center;
+  margin: 2rem;
+}
+
+.mobMenuItem:active {
+  background-color: #e9f9fa;
+  color: #395b64;
+}
+
+@media (max-width: 480px) {
+  .toggleMenu {
+    display: block;
+  }
+  .navBar {
+    display: none;
+  }
 }
 
 .hide-element {
@@ -560,8 +605,10 @@ a:active {
 }
 
 .contactContainer {
-  width: 100%;
+  width: 100vw;
   min-height: 75vh;
+  z-index: 0;
+  position: relative;
 }
 
 .contactText {

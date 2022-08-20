@@ -9,12 +9,12 @@ export default function Technologies() {
     { name: "HTML5", image: "", id: 1 },
     { name: "CSS", image: "", id: 2 },
     { name: "JavaScript", image: "", id: 3 },
-    { name: "NodeJs", image: "", id: 4 },
+    { name: "Node.js", image: "", id: 4 },
     { name: "React", image: "", id: 5 },
   ];
 
   const technologies2 = [
-    { name: "NextJs", image: "", id: 6 },
+    { name: "Next.js", image: "", id: 6 },
     { name: "Git", image: "", id: 7 },
     { name: "GitHub", image: "", id: 8 },
     { name: "TypeScript", image: "", id: 9 },
@@ -35,9 +35,11 @@ export default function Technologies() {
 
   return (
     <div className="mt-48 technologiesContainer">
-      <h3 className="ml-32 text-5xl font-semibold">Technologies</h3>
-      <div className="flex flex-row justify-center text-center p-16 text-3xl font-light">
-        <div className="pr-32">
+      <h3 className="sm:ml-32 sm:m-4  text-5xl font-semibold mb-8 ml-4">
+        Technologies
+      </h3>
+      <div className="flex flex-row justify-center text-center sm:p-16 sm:text-3xl font-light">
+        <div className="sm:pr-32">
           <ul>
             {technologies1.map((tech, key) => (
               <Reveal key="" keyframes={customAnimation} triggerOnce>
@@ -52,7 +54,7 @@ export default function Technologies() {
             ))}
           </ul>
         </div>
-        <div className="pl-32">
+        <div className="sm:pl-32 pl-8">
           <ul>
             {technologies2.map((tech, key) => (
               <Reveal key="" keyframes={customAnimation} triggerOnce>

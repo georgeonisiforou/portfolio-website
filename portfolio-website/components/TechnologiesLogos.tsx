@@ -41,10 +41,10 @@ export default function TechnologiesLogos() {
 
   return (
     <div className="flex justify-center m-8">
-      <div className=" flex justify-center p-8 flex-wrap max-w-5xl">
+      <div className=" flex justify-center sm:p-8 flex-wrap max-w-5xl">
         {logos.map((logo, key) => (
           <Reveal key="" keyframes={customAnimation} triggerOnce>
-            <div key="" className="m-8">
+            <div key="" className="sm:m-8 m-2">
               <ul className="logoUl">
                 <li>
                   <div className="imageWrapper">

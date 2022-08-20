@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { GoLocation } from "react-icons/go";
+import { FiMenu } from "react-icons/fi";
 import { Fade } from "react-awesome-reveal";
 
 const Header = () => {
+  const [toggle, handleToggle] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", isSticky);
     return () => {
@@ -16,7 +18,7 @@ const Header = () => {
     const headerLocation = document.querySelector(".headerLocation");
     const headerCurrentJob = document.querySelector(".headerCurrentJob");
     const scrollTop = window.scrollY;
-    scrollTop >= 100
+    scrollTop >= 80
       ? (headerLocation?.classList.add("hide-element"),
         headerCurrentJob?.classList.add("hide-element"),
         header?.classList.add("is-sticky"))
@@ -25,11 +27,19 @@ const Header = () => {
         header?.classList.remove("is-sticky"));
   };
 
+  const openMenu = () => {
+    const menu = document.querySelector(".mobileMenu");
+    handleToggle(!toggle);
+    toggle
+      ? menu?.classList.add("showMenu")
+      : menu?.classList.remove("showMenu");
+  };
+
   return (
     <Fade triggerOnce className="z-50 relative">
       <div className="flex flex-row w-full justify-between content-center items-center p-8 header fixed z-50 top-0">
         <div>
-          <h1 className=" text-5xl text-slate-800 font-bold fancy-title">
+          <h1 className=" text-2xl sm:text-5xl text-slate-800 font-bold fancy-title">
             <Link href="/">
               <div className="fancyTitle flex">
                 <div className="titleLetter">G</div>
@@ -40,7 +50,11 @@ const Header = () => {
           </h1>
         </div>
 
-        <div className="flex flex-col headerLocation">
+        <button onClick={openMenu} className="toggleMenu">
+          <FiMenu />
+        </button>
+
+        <div className="flex flex-col headerLocation invisible sm:visible ">
           <div className="text-slate-800 text-xl">Based in Limassol</div>
           <div className="text-slate-800 text-xl flex baseLocation">
             <a
@@ -54,10 +68,10 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="text-slate-800 text-xl currentWork headerCurrentJob">
+        <div className="text-slate-800 text-xl currentWork headerCurrentJob invisible sm:visible ">
           Currently Software Engineer Intern at VasLabs Ltd
         </div>
-        <div className="text-slate-800 text-xl font-medium flex flex-row">
+        <div className="text-slate-800 sm:  text-xl font-medium flex flex-row navBar">
           <ul className="flex flex-row">
             <li className="mr-2 hover:text-slate-400 fancy-link">
               <Link href="/">Projects</Link>
@@ -71,6 +85,19 @@ const Header = () => {
               <Link href="/contact">Contact</Link>
             </li>
           </ul>
+        </div>
+      </div>
+      <div className="mobileMenu  bg-slate-800 text-slate-100">
+        <div className="mobMenuItem">
+          {" "}
+          <Link href="/">Projects</Link>
+        </div>
+        <div className="mobMenuItem">
+          {" "}
+          <Link href="/about">About</Link>
+        </div>
+        <div className="mobMenuItem">
+          <Link href="/contact">Contact</Link>
         </div>
       </div>
     </Fade>

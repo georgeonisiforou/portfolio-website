@@ -6,13 +6,13 @@ import { AttentionSeeker, Fade, Slide } from "react-awesome-reveal";
 export default function Footer() {
   return (
     <Fade delay={750}>
-      <div className="flex justify-between items-center p-8 font-semibold footer">
-        <div className="text-lg">
+      <div className="flex justify-between items-center sm:p-8 p-4 font-semibold footer">
+        <div className="sm:text-lg text-xs">
           <h4>George Onisiforou</h4>
           <h4>Software Developer</h4>
         </div>
-        <div className="flex text-3xl">
-          <div className="m-4 github">
+        <div className="flex flex-row sm:text-3xl">
+          <div className="sm:m-4 ml-8 github">
             <a
               href="https://github.com/georgeonisiforou?tab=repositories"
               target="_blank"
@@ -21,7 +21,7 @@ export default function Footer() {
               <BsGithub />
             </a>
           </div>
-          <div className="m-4 linkedin">
+          <div className="sm:m-4 ml-4 linkedin">
             <a
               href="https://www.linkedin.com/in/george-onisiforou-mics-7b164051/"
               target="_blank"
@@ -30,7 +30,7 @@ export default function Footer() {
               <BsLinkedin />
             </a>
           </div>
-          <div className="m-4 instagram">
+          <div className="sm:m-4 ml-4 instagram">
             <a
               href="https://www.instagram.com/georgeonis/"
               target="_blank"
@@ -39,7 +39,7 @@ export default function Footer() {
               <BsInstagram />
             </a>
           </div>
-          <div className="m-4 spotify">
+          <div className="sm:m-4 ml-4 spotify">
             <a
               href="https://open.spotify.com/user/onisifg0?si=67e08bd310fe4040"
               target="_blank"
@@ -48,7 +48,7 @@ export default function Footer() {
               <BsSpotify />
             </a>
           </div>
-          <div className="m-4 tinder">
+          <div className="sm:m-4 ml-4 mr-8 tinder">
             <a
               href="https://giphy.com/gifs/stoner-sees-isopropyl-xSM46ernAUN3y/fullscreen"
               target="_blank"
@@ -58,7 +58,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="text-lg">
+        <div className="sm:text-lg text-xs">
           <h4>Designed and Developed by George Onisiforou</h4>
         </div>
       </div>
