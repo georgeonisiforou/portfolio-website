@@ -31,6 +31,7 @@ body {
   margin: 0;
   font-family: "PP Radio Grotesk";
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .technologiesContainer {
@@ -153,7 +154,9 @@ body {
 
 .toggleMenu {
   display: none;
+  z-index: 9999;
   position: absolute;
+
   right: 2rem;
   font-size: 2rem;
   cursor: pointer;
@@ -164,29 +167,41 @@ body {
 }
 
 .mobileMenu {
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1em;
+  flex-direction: column;
+  position: fixed;
+  inset: 0 0 0 0;
+  width: 100vw;
+  height: 100vh;
+  transform: translateX(100%);
+  background: rgba(44, 52, 66, 0.8);
+  backdrop-filter: blur(0.5);
+  color: #fff;
+  transition: transform 250ms ease-in;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 .showMenu {
   display: flex;
-  flex-direction: column;
-  position: absolute;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
-  font-size: 5rem;
+  row-gap: 1em;
+  flex-direction: column;
+  position: fixed;
+  inset: 0 0 0 0;
+  transform: translateX(0%);
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 .mobMenuItem {
   width: 100%;
   text-align: center;
   margin: 2rem;
-}
-
-.mobMenuItem:active {
-  background-color: #e9f9fa;
-  color: #395b64;
 }
 
 @media (max-width: 480px) {

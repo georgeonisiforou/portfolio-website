@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { GoLocation } from "react-icons/go";
 import { FiMenu } from "react-icons/fi";
+import { IoMdCloseCircle } from "react-icons/io";
 import { Fade } from "react-awesome-reveal";
 
 const Header = () => {
@@ -87,17 +88,30 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      <div className="mobileMenu  bg-slate-800 text-slate-100">
+      <div className="mobileMenu z-30  text-slate-100">
+        <button className="text-5xl" onClick={openMenu}>
+          <IoMdCloseCircle />
+        </button>
         <div className="mobMenuItem">
-          {" "}
-          <Link href="/">Projects</Link>
+          <Link href="/">
+            <a href="" onClick={openMenu}>
+              Projects
+            </a>
+          </Link>
         </div>
         <div className="mobMenuItem">
-          {" "}
-          <Link href="/about">About</Link>
+          <Link href="/about">
+            <a href="" onClick={openMenu}>
+              About
+            </a>
+          </Link>
         </div>
         <div className="mobMenuItem">
-          <Link href="/contact">Contact</Link>
+          <Link href="/contact">
+            <a href="" onClick={openMenu}>
+              Contact
+            </a>
+          </Link>
         </div>
       </div>
     </Fade>

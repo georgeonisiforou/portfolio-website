@@ -54,7 +54,7 @@ export default function Hero() {
               When I'm not working on a visual interface, I'm probably out
               eating with friends or stuck in a YouTube video loophole.
             </h3>
-            <h3 className="mt-2">Or petting a dog.</h3>
+            <h3 className="mt-12">Or petting a dog.</h3>
             <h3>Maybe a cat also.</h3>
           </div>
         </Reveal>
