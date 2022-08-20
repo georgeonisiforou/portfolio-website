@@ -34,8 +34,8 @@ export default function Technologies() {
 `;
 
   return (
-    <div>
-      <h3 className="ml-32 text-3xl font-semibold">Technologies</h3>
+    <div className="mt-48 technologiesContainer">
+      <h3 className="ml-32 text-5xl font-semibold">Technologies</h3>
       <div className="flex flex-row justify-center text-center p-16 text-3xl font-light">
         <div className="pr-32">
           <ul>

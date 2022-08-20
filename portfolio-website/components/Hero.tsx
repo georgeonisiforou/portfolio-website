@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import mypic from "../assets/images/profilepic.jpg";
+import mypic from "../public/travel/profile.jpg";
 import { Fade } from "react-awesome-reveal";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
@@ -18,38 +18,35 @@ export default function Hero() {
   }
 `;
   return (
-    <div className="flex flex-col content-between items-stretch place-content-between">
-      <div className="flex items-center content-center">
+    <div className="flex flex-col content-between items-stretch place-content-between mt-40 relative z-0 heroContainer">
+      <div className="flex items-center content-center justify-between">
         <Fade triggerOnce delay={500}>
           <div className="left-20 relative top-16">
             <Image
               src={mypic}
               alt=""
-              width="600px"
+              width="640px"
               height="420px"
-              className="rounded-lg"
+              className="rounded-lg relative"
             />
           </div>
         </Fade>
-        <div className="flex flex-col ml-32 mt-20 relative">
+        <div className="flex flex-col justify-center items-end relative pr-16 pl-16 mr-40 w-1/4">
           <Reveal keyframes={customAnimation} triggerOnce delay={750}>
-            <h1 className=" text-8xl text-slate-800 font-medium fancy-title">
+            <h1 className=" text-8xl text-slate-800 font-bold">
               GEORGE ONISIFOROU
             </h1>
           </Reveal>
 
-          <h2 className="absolute top-48 right-60 text-slate-600 text-2xl mb-16">
-            Software Developer
-          </h2>
+          <h2 className=" text-slate-600 text-2xl mb-16">Software Developer</h2>
         </div>
       </div>
-      <div className="flex justify-end mr-52 mt-32 mb-12">
+      <div className="flex justify-end mr-56 mt-64 mb-12">
         <Reveal keyframes={customAnimation} triggerOnce delay={1250}>
-          <div className=" text-lg max-w-xl">
+          <div className=" text-2xl text-justify max-w-xl">
             <h3>
               Newly born Web Developer with a strong lean on the frontend side.
-              I try to create minimalistic user-friendly interfaces. Dark mode
-              advocate.
+              I try to create minimalistic user-friendly interfaces.
             </h3>
             <h3 className="mt-12">
               When I'm not working on a visual interface, I'm probably out

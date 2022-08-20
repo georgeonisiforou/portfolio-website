@@ -45,13 +45,64 @@ export default function TechnologiesLogos() {
         {logos.map((logo, key) => (
           <Reveal key="" keyframes={customAnimation} triggerOnce>
             <div key="" className="m-8">
-              <Image
-                src={logo}
-                width="70px"
-                height="70px"
-                alt="tech-logo"
-                key=""
-              />
+              <ul className="logoUl">
+                <li>
+                  <div className="imageWrapper">
+                    {" "}
+                    <Image
+                      src={logo}
+                      width="70px"
+                      height="70px"
+                      alt="tech-logo"
+                      key=""
+                      className="imageLogo"
+                    />
+                  </div>
+                  <div className="imageWrapper">
+                    {" "}
+                    <Image
+                      src={logo}
+                      width="70px"
+                      height="70px"
+                      alt="tech-logo"
+                      key=""
+                      className="imageLogo"
+                    />
+                  </div>
+                  <div className="imageWrapper">
+                    {" "}
+                    <Image
+                      src={logo}
+                      width="70px"
+                      height="70px"
+                      alt="tech-logo"
+                      key=""
+                      className="imageLogo"
+                    />
+                  </div>
+                  <div className="imageWrapper">
+                    {" "}
+                    <Image
+                      src={logo}
+                      width="70px"
+                      height="70px"
+                      alt="tech-logo"
+                      key=""
+                      className="imageLogo"
+                    />
+                  </div>
+                  <div className="imageWrapper">
+                    <Image
+                      src={logo}
+                      width="70px"
+                      height="70px"
+                      alt="tech-logo"
+                      key=""
+                      className="imageLogo"
+                    />
+                  </div>
+                </li>
+              </ul>
             </div>
           </Reveal>
         ))}

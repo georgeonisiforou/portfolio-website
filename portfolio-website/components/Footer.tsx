@@ -1,5 +1,6 @@
 import React from "react";
 import { BsGithub, BsLinkedin, BsInstagram, BsSpotify } from "react-icons/bs";
+import { SiTinder } from "react-icons/si";
 import { AttentionSeeker, Fade, Slide } from "react-awesome-reveal";
 
 export default function Footer() {
@@ -45,6 +46,15 @@ export default function Footer() {
               rel="noopener noreferrer"
             >
               <BsSpotify />
+            </a>
+          </div>
+          <div className="m-4 tinder">
+            <a
+              href="https://giphy.com/gifs/stoner-sees-isopropyl-xSM46ernAUN3y/fullscreen"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SiTinder />
             </a>
           </div>
         </div>
