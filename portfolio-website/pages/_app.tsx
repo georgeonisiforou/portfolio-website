@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, []);
 
   return loading ? (
-    <div className="loadingScreen">
+    <div className="loadingScreen flex flex-col justify-center items-center">
       <ul className="text" id="text">
         <li className="bounce">G</li>
         <li className="ghost">e</li>
@@ -36,6 +36,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <li className="ghost">o</li>
         <li className="ghost">u</li>
       </ul>
+      <div className=" text-center text-2xl font-extralight recommendation">
+        This website is best enjoyed on a computer screen.
+      </div>
     </div>
   ) : (
     <Layout>

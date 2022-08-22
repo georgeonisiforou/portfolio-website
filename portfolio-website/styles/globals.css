@@ -44,15 +44,45 @@ body {
   background-color: #000000;
   animation: changeScreen 7000ms ease-in;
   transform-origin: bottom;
+  color: #fff;
+}
+
+.recommendation {
+  opacity: 0;
+  animation: fadeIn 7000ms ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  81% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .text {
-  position: fixed;
+  /* position: fixed;
   top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  left: 50%; */
+  /* transform: translateX(-50%) translateY(-50%); */
   list-style: none;
-  transform-origin: left;
+  /* transform-origin: left; */
   border-bottom: 0;
 }
 
@@ -66,6 +96,15 @@ body {
   transition: all 0.5s ease-in-out;
   max-width: 2em;
   animation: rotateText 5000ms ease-in-out;
+}
+
+@media (max-width: 640px) {
+  .text li {
+    font-size: 2rem;
+  }
+  .recommendation {
+    font-size: 1rem;
+  }
 }
 
 .text li.bounce {
@@ -127,16 +166,13 @@ body {
 
 @keyframes changeScreen {
   0% {
-    opacity: 1;
     transform: scaleY(1);
   }
   90% {
     transform: scaleY(1);
-    opacity: 0.9;
   }
   100% {
     transform: scaleY(0);
-    opacity: 0.7;
   }
 }
 
@@ -403,7 +439,7 @@ a:active {
 .hobbyContainer {
   animation: fade-in 1s;
   height: 70vh;
-  width: 90vw;
+  /* width: 90vw; */
 }
 
 @keyframes fade-in {
@@ -553,6 +589,23 @@ a:active {
   z-index: 30;
 }
 
+@media (max-width: 480px) {
+  .photoInfo {
+    height: 25%;
+  }
+
+  .left-arrow {
+    left: 8px;
+    font-size: 1rem;
+    color: #fff;
+  }
+  .right-arrow {
+    right: 8px;
+    font-size: 1rem;
+    color: #fff;
+  }
+}
+
 @keyframes click {
   0% {
     transform: scale(1);
@@ -579,6 +632,13 @@ a:active {
   height: 60px;
   margin: 0 30px;
   transform: rotate(-30deg) skew(25deg);
+}
+
+@media (max-width: 480px) {
+  .logoUl li {
+    transform: rotate(0deg) skew(0deg);
+    margin: 1rem;
+  }
 }
 
 .logoUl li div {

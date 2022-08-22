@@ -38,32 +38,32 @@ export default function About() {
   };
 
   return (
-    <div className="p-16 mt-48 relative z-0">
-      <div className="mb-32 w-1/3 relative">
-        <p className="font-medium text-slate-500 ml-1 mb-2">
+    <div className="sm:p-16 p-4 mt-48 relative z-0">
+      <div className="mb-32 sm:w-1/3 relative">
+        <p className="sm:font-medium text-xs sm:text-base text-slate-500 ml-1 mb-2">
           GEORGE ONISIFOROU - EST 1990
         </p>
-        <h1 className=" text-8xl text-slate-900 font-bold fancy-title uppercase">
+        <h1 className="text-5xl sm:text-8xl text-slate-900 font-bold fancy-title uppercase">
           Passionate Web Developer
         </h1>
       </div>
-      <div className="flex justify-between m-8">
-        <div className="text-2xl mt-8 font-semibold">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:m-8">
+        <div className="sm:text-2xl mb-8 sm:mb-0 mt-8 font-semibold">
           <h3>Always seeking and exploring creativity.</h3>
         </div>
-        <div className="w-1/2">
+        <div className="sm:w-1/2 w-screen absolute left-0 mt-24 sm:mt-0 sm:relative">
           <Image
             src={aboutpic}
             alt=""
-            width="700px"
-            height="500px"
-            className="rounded-lg"
+            // width="700px"
+            // height="500px"
+            className="sm:rounded-lg relative"
           />
         </div>
       </div>
 
-      <div className="flex justify-start text-2xl mt-32">
-        <div className="w-1/2 text-justify p-4 pr-8">
+      <div className="flex justify-start sm:text-2xl sm:mt-32 mt-96">
+        <div className="sm:w-1/2 text-justify p-4 sm:pr-8">
           <p className="animate__animated animate__backInLeft">
             So, here's my journey so far...{" "}
           </p>
@@ -86,11 +86,11 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className=" p-4 mt-48 mb-32">
-        <h2 className="text-5xl mt-8 mb-16 font-semibold">
+      <div className=" p-4 mt-48 sm:mb-32">
+        <h2 className="sm:text-5xl text-2xl mt-8 mb-16 font-semibold">
           Personal Interests.
         </h2>
-        <div className="flex justify-between text-3xl mb-12">
+        <div className="flex justify-between sm:text-3xl text-xl mb-12">
           <h3>
             <button className=" hobby-link" onClick={footballClicked}>
               Football
@@ -112,11 +112,11 @@ export default function About() {
             </button>
           </h3>
         </div>
-        <div className="flex justify-between text-2xl hobbyContainer">
-          <p className="w-1/4 text-justify hobbyText" key={btnClicked}>
+        <div className="flex flex-col sm:flex-row justify-between sm:text-2xl p-4 sm:p-0 hobbyContainer">
+          <p className="sm:w-1/4 text-justify hobbyText" key={btnClicked}>
             {btnClicked}
           </p>
-          <div className="w-2/3 mr-12">
+          <div className="sm:w-2/3 w-screen sm:mr-12 absolute left-0 sm:relative mt-48 sm:mt-0">
             <Carousel />
           </div>
         </div>

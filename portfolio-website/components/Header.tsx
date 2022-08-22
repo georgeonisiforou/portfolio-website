@@ -14,7 +14,7 @@ const Header = () => {
     };
   }, []);
 
-  const isSticky = (e) => {
+  const isSticky = () => {
     const header = document.querySelector(".header");
     const headerLocation = document.querySelector(".headerLocation");
     const headerCurrentJob = document.querySelector(".headerCurrentJob");
