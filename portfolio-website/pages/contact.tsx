@@ -10,7 +10,7 @@ export default function Contact() {
 
   return (
     <div className=" contactContainer bg-slate-800 text-slate-100">
-      <div className="flex justify-start items-center pl-16 pt-40  mt-32 uppercase">
+      <div className="flex sm:justify-start sm:items-center sm:pl-16 pt-40  mt-32 uppercase">
         <div className="contactText">
           <span>Message me to</span>
           <div className="message">
@@ -25,7 +25,7 @@ export default function Contact() {
       <div className="flex p-8 ml-8 mb-4 mt-32">
         <div className="">
           <CopyToClipboard text="georgeon2016@gmail.com">
-            <div className="text-6xl flex flex-col items-center font-semibold emailContainer">
+            <div className="sm:text-6xl text-2xl flex flex-col items-center font-semibold emailContainer">
               <h3 className=" clickToCopy text-2xl ">{copyText}</h3>
 
               <button onClick={copied} className="email after:bg-slate-100">

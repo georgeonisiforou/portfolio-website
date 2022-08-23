@@ -57,19 +57,22 @@ body {
     opacity: 0;
   }
   80% {
-    opacity: 0;
+    opacity: 0.3;
   }
   81% {
-    opacity: 0;
+    opacity: 0.5;
   }
   85% {
-    opacity: 0;
+    opacity: 0.6;
   }
   90% {
-    opacity: 0;
+    opacity: 0.7;
   }
   95% {
-    opacity: 0.5;
+    opacity: 0.8;
+  }
+  99% {
+    opacity: 0.9;
   }
   100% {
     opacity: 1;
@@ -213,7 +216,7 @@ body {
   width: 100vw;
   height: 100vh;
   transform: translateX(100%);
-  background: rgba(44, 52, 66, 0.8);
+  background: rgba(44, 52, 66, 0.9);
   backdrop-filter: blur(0.5);
   color: #fff;
   transition: transform 250ms ease-in;
@@ -238,6 +241,7 @@ body {
   width: 100%;
   text-align: center;
   margin: 2rem;
+  text-transform: uppercase;
 }
 
 @media (max-width: 480px) {
@@ -376,7 +380,8 @@ a:active {
 .github,
 .linkedin,
 .instagram,
-.tinder {
+.tinder,
+.pdf {
   transition: color 250ms ease-in, transform 250ms ease-in;
 }
 
@@ -403,6 +408,11 @@ a:active {
 .tinder:hover {
   transform: scale(1.1);
   color: rgb(253, 72, 87);
+}
+
+.pdf:hover {
+  color: rgb(252, 53, 34);
+  transform: scale(1.1);
 }
 
 .footer {
@@ -713,6 +723,17 @@ a:active {
   animation: openclose 16s ease-in-out infinite;
 }
 
+@media (max-width: 480px) {
+  .contactText {
+    padding-left: 1rem;
+    font-size: 1rem;
+  }
+  .message {
+    display: block;
+    left: 140px;
+    animation: opencloseSmallScreen 16s ease-in-out infinite;
+  }
+}
 @keyframes openclose {
   0% {
     top: 0;
@@ -839,4 +860,197 @@ a:active {
     top: 0;
     width: 0;
   }
+}
+
+@keyframes opencloseSmallScreen {
+  0% {
+    top: 0;
+    width: 0;
+  }
+  3% {
+    top: 0;
+    width: 0;
+  }
+  7% {
+    width: 300px;
+  }
+  11% {
+    top: 0;
+    width: 300px;
+  }
+  14% {
+    top: 0;
+    width: 0;
+  }
+  17% {
+    top: -1.5rem;
+    width: 0;
+  }
+  20% {
+    top: -1.5rem;
+    width: 0;
+  }
+  24% {
+    top: -1.5rem;
+    width: 300px;
+  }
+  28% {
+    top: -1.5rem;
+    width: 300px;
+  }
+  31% {
+    top: -1.5rem;
+    width: 0;
+  }
+  34% {
+    top: -3rem;
+    width: 0;
+  }
+  37% {
+    top: -3rem;
+    width: 0;
+  }
+  41% {
+    top: -3rem;
+    width: 300px;
+  }
+  45% {
+    top: -3rem;
+    width: 300px;
+  }
+  48% {
+    top: -3rem;
+    width: 0;
+  }
+  51% {
+    top: -3rem;
+    width: 0;
+  }
+  54% {
+    top: -4.5rem;
+    width: 0;
+  }
+  57% {
+    top: -4.5rem;
+    width: 0;
+  }
+  61% {
+    top: -4.5rem;
+    width: 300px;
+  }
+  65% {
+    top: -4.5rem;
+    width: 300px;
+  }
+  68% {
+    top: -4.5rem;
+    width: 0;
+  }
+  71% {
+    top: -4.5rem;
+    width: 0;
+  }
+  74% {
+    top: -6rem;
+    width: 0;
+  }
+  77% {
+    top: -6rem;
+    width: 0;
+  }
+  81% {
+    top: -6rem;
+    width: 300px;
+  }
+  85% {
+    top: -6rem;
+    width: 300px;
+  }
+  89% {
+    top: -6rem;
+    width: 0;
+  }
+  92% {
+    top: -6rem;
+    width: 0;
+  }
+  95% {
+    top: 0;
+    width: 0;
+  }
+
+  98% {
+    top: 0;
+    width: 0;
+  }
+
+  100% {
+    top: 0;
+    width: 0;
+  }
+}
+
+.projectsContainer {
+  height: 88vh;
+}
+
+.workContainer {
+  width: 30%;
+  background-image: url("https://images.unsplash.com/photo-1520085601670-ee14aa5fa3e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80");
+  background-size: cover;
+  transition: transform 500ms ease;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.workContainer:hover {
+  transform: scale(1.05);
+}
+
+.workContainer:hover .card-title::after {
+  transform: scale(1);
+  transition-delay: 500ms;
+}
+
+.card-content {
+  background: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(255 0% 50% / 0.2) 10%,
+    hsl(0 0% 0% / 1)
+  );
+  height: 100%;
+  padding: 1rem;
+}
+
+.card-title {
+  position: relative;
+  max-width: fit-content;
+}
+
+.card-title::after {
+  content: "";
+  position: absolute;
+  left: calc(1rem * -1);
+  bottom: -1rem;
+  height: 0.3rem;
+  width: calc(100% + 1rem);
+  background: rgb(4, 211, 4);
+  transform: scale(0);
+  transition: transform 500ms ease;
+  transform-origin: left;
+  border-radius: 10px;
+}
+
+.workContainer:hover .work-content {
+  transform: translateY(0);
+}
+
+.work-content {
+  transform: translateY(130%);
+  transition: transform 500ms ease;
+}
+
+.work-content li {
+  margin-left: 2rem;
+  list-style: disc;
 }

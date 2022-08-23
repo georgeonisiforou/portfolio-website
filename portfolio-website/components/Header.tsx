@@ -75,7 +75,7 @@ const Header = () => {
         <div className="text-slate-800 sm:  text-xl font-medium flex flex-row navBar">
           <ul className="flex flex-row">
             <li className="mr-2 hover:text-slate-400 fancy-link">
-              <Link href="/">Projects</Link>
+              <Link href="/projects">Projects</Link>
             </li>
             <li className="mr-2">|</li>
             <li className="mr-2 hover:text-slate-400 fancy-link">
@@ -89,11 +89,23 @@ const Header = () => {
         </div>
       </div>
       <div className="mobileMenu z-30  text-slate-100">
-        <button className="text-5xl" onClick={openMenu}>
+        <div className="uppercase font-bold text-lg absolute top-8 left-8">
+          George Onisiforou
+          <br />
+          <div className="text-sm text-slate-300 font-normal">
+            Software Developer
+          </div>
+        </div>
+        <div className="absolute top-32 left-8 text-xs">
+          Based in Limassol
+          <br />
+          Cyprus
+        </div>
+        <button className="text-5xl absolute top-8 right-8" onClick={openMenu}>
           <IoMdCloseCircle />
         </button>
         <div className="mobMenuItem">
-          <Link href="/">
+          <Link href="/projects">
             <a href="" onClick={openMenu}>
               Projects
             </a>
