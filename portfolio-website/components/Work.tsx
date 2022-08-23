@@ -8,7 +8,7 @@ export default function Work({
   bullets,
 }) {
   return (
-    <div className=" ml-4 text-slate-100 w-fit rounded-md relative workContainer mt-24">
+    <div className=" ml-4 text-slate-100 w-fit rounded-md relative workContainer sm:mt-24 mt-8 mr-8 shadow-2xl">
       <div className="card-content rounded-md">
         <div className="card-title">
           <h3 className="text-3xl font-extrabold">{company}</h3>

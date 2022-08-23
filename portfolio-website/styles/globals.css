@@ -1041,16 +1041,26 @@ a:active {
   border-radius: 10px;
 }
 
-.workContainer:hover .work-content {
-  transform: translateY(0);
-}
-
 .work-content {
-  transform: translateY(130%);
-  transition: transform 500ms ease;
 }
 
 .work-content li {
   margin-left: 2rem;
   list-style: disc;
+}
+
+@media (hover) {
+  .work-content {
+    transform: translateY(130%);
+    transition: transform 500ms ease;
+  }
+  .workContainer:hover .work-content {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .workContainer {
+    width: 100%;
+  }
 }

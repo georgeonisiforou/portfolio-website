@@ -7,7 +7,7 @@ export default function WorkExperience() {
       <h3 className="sm:ml-32 sm:m-4  text-5xl font-semibold mb-8 ml-4">
         Work Experience
       </h3>
-      <div className="flex p-4 ml-16">
+      <div className="flex sm:flex-row flex-col sm:p-4 sm:ml-16 pr-8">
         <Work
           company="VasLabs LTD"
           position="Software Engineer Intern"
@@ -24,7 +24,7 @@ export default function WorkExperience() {
               <li>Terraform</li>
               <li>Docker</li>
               <li>Git | GitHub</li>
-              <li>Node.js | TypeScripy | React | Next.js | Markdown</li>
+              <li>Node.js | TypeScript | React | Next.js | Markdown</li>
               <li>Bash</li>
               <li>Unit Testing</li>
             </div>
