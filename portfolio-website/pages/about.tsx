@@ -64,12 +64,12 @@ export default function About() {
       <div className="flex justify-start sm:text-2xl sm:mt-32 mt-96">
         <div className="sm:w-1/2 text-justify p-4 sm:pr-8">
           <p className="animate__animated animate__backInLeft">
-            So, here's my journey so far...
+            So, here&apos;s my journey so far...
           </p>
           <br />
           <p className="animate__animated animate__backInRight">
             I studied Computer Science with Business Management at the
-            University of Manchester and then did a Master's in Shipping at
+            University of Manchester and then did a Master&apos;s in Shipping at
             Cardiff University. I worked in a big shipping company in Limassol
             for 6+ years until I started reminiscing my coding days back from
             university. I started experimenting with code again after a big gap
