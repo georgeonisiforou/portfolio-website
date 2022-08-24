@@ -6,7 +6,7 @@ import { IoMdCloseCircle } from "react-icons/io";
 import { Fade } from "react-awesome-reveal";
 
 const Header = () => {
-  const [toggle, handleToggle] = useState(false);
+  const [toggle, handleToggle] = useState(true);
   useEffect(() => {
     window.addEventListener("scroll", isSticky);
     return () => {
@@ -38,7 +38,7 @@ const Header = () => {
 
   return (
     <Fade triggerOnce className="z-50 relative">
-      <div className="flex flex-row w-full justify-between content-center items-center p-8 header fixed z-50 top-0">
+      <div className="flex flex-row w-full justify-between content-center items-center p-8 header z-50 top-0">
         <div>
           <h1 className=" text-2xl sm:text-5xl text-slate-800 font-bold fancy-title">
             <Link href="/">

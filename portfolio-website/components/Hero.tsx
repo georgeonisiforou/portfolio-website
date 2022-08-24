@@ -57,7 +57,7 @@ export default function Hero() {
             </h3>
             <h3 className="mt-12">
               When I'm not working on a visual interface, I'm probably out
-              eating with friends or stuck in a YouTube video loophole.
+              eating with friends or stuck in a YouTube video watching spree.
             </h3>
             <h3 className="mt-12">Or petting a dog.</h3>
             <h3>Maybe a cat also.</h3>

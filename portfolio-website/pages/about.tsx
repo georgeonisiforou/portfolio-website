@@ -20,7 +20,6 @@ export default function About() {
     "In the last few years I have been more and more interested in gardening. I guess you can say it's an indication that I'm growing old. I love caring, propagating, experimenting or just simply staring at a beautiful plant. I'm also making my own compost in my backyard. Nothing goes to waste!";
 
   const hobbyText = useRef(footballHobby);
-  console.log(travelImages[0].image);
 
   const [btnClicked, setBtnClicked] = useState(footballHobby);
 
@@ -65,7 +64,7 @@ export default function About() {
       <div className="flex justify-start sm:text-2xl sm:mt-32 mt-96">
         <div className="sm:w-1/2 text-justify p-4 sm:pr-8">
           <p className="animate__animated animate__backInLeft">
-            So, here's my journey so far...{" "}
+            So, here's my journey so far...
           </p>
           <br />
           <p className="animate__animated animate__backInRight">
