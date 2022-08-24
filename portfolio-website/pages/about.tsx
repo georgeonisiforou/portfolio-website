@@ -48,7 +48,7 @@ export default function About() {
         </h1>
       </div>
       <div className="flex flex-col sm:flex-row sm:justify-between sm:m-8">
-        <div className="sm:text-3xl mb-8 sm:mb-0 mt-8 font-semibold">
+        <div className="sm:text-2xl mb-8 sm:mb-0 mt-8 font-semibold">
           <h3>Always seeking and exploring creativity.</h3>
         </div>
         <div className="sm:w-1/2 w-screen absolute left-0 mt-24 sm:mt-0 sm:relative">

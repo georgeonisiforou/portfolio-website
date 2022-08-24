@@ -353,6 +353,13 @@ a:active {
   transform: scale(1);
 }
 
+@media (max-width: 480px) {
+  .asterisk {
+    padding-left: 1rem;
+    font-size: 0.5rem;
+  }
+}
+
 .logos {
   width: 50px;
   height: 50px;
@@ -995,7 +1002,7 @@ a:active {
 }
 
 .workContainer {
-  width: 30%;
+  width: 40%;
   background-image: url("https://images.unsplash.com/photo-1520085601670-ee14aa5fa3e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80");
   background-size: cover;
   transition: transform 500ms ease;

@@ -4,6 +4,7 @@ import mypic from "../public/travel/profile.jpg";
 import { Fade } from "react-awesome-reveal";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
+import { CgAsterisk } from "react-icons/cg";
 
 export default function Hero() {
   const customAnimation = keyframes`
@@ -21,7 +22,7 @@ export default function Hero() {
     <div className="sm:flex flex-col content-between items-stretch place-content-between mt-40 relative z-0 heroContainer">
       <div className="flex sm:flex-row flex-col items-center content-center justify-between">
         <Fade triggerOnce delay={500}>
-          <div className="sm:left-20 sm:relative sm:top-16 sm:w-3/4 w-screen z-0 my-8 sm:my-0">
+          <div className="sm:left-20 sm:relative sm:top-16 sm:w-1/2 w-screen z-0 my-8 sm:my-0">
             <Image
               src={mypic}
               alt=""
@@ -29,6 +30,10 @@ export default function Hero() {
               // height="420px"
               className="sm:rounded-lg relative"
             />
+            <div className="flex text-xs mt-4 asterisk">
+              <CgAsterisk /> This photo is a little outdated. I am a bit more
+              mature now(?) and have a couple grey hair.
+            </div>
           </div>
         </Fade>
         <div className="flex flex-col justify-center items-end relative sm:pr-16 sm:pl-16 sm:mr-40 pl-4  mr-4 sm:w-1/4">
