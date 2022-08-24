@@ -3,7 +3,8 @@ import type { AppProps } from "next/app";
 import Layout from "../components/Layout";
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Router, useRouter } from "next/router";
+import { useRouter } from "next/router";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -63,6 +64,42 @@ function MyApp({ Component, pageProps }: AppProps) {
         }}
       >
         <Layout>
+          <Head>
+            <title>George Onisiforou</title>
+            <meta name="viewport" content="width=device-width"></meta>
+            <meta
+              name="description"
+              content="Software developer building interactive and user-friendly web experiences."
+            ></meta>
+            <meta property="twitter:card" content="summary_large_image"></meta>
+            <meta
+              property="twitter:url"
+              content="https://www.georgeonisiforou.com/"
+            ></meta>
+            <meta property="twitter:title" content="George Onisiforou"></meta>
+            <meta
+              property="twitter:description"
+              content="Software developer building interactive and user-friendly web experiences."
+            ></meta>
+            <meta
+              property="twitter:image"
+              content="https://www.georgeonisiforou.com/images/app-cover.png"
+            ></meta>
+            <meta property="og:type" content="website"></meta>
+            <meta
+              property="og:url"
+              content="https://www.georgeonisiforou.com/"
+            ></meta>
+            <meta property="og:title" content="George Onisiforou"></meta>
+            <meta
+              property="og:description"
+              content="Software developer building interactive and user-friendly web experiences."
+            ></meta>
+            <meta
+              property="og:image"
+              content="https://www.georgeonisiforou.com/images/app-cover.png"
+            ></meta>
+          </Head>
           <Component {...pageProps} />
         </Layout>
       </motion.div>
