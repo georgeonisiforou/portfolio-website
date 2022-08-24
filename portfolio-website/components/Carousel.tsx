@@ -38,10 +38,10 @@ export default function Carousel() {
                 />
                 <div className="photoInfo flex justify-between items-end">
                   <div className="location">
-                    <p className="text-4xl font-semibold">{image.city}</p>
+                    <p className="sm:text-4xl sm:font-semibold">{image.city}</p>
                     <p>{image.country}</p>
                   </div>
-                  <div className="year text-2xl font-extrabold">
+                  <div className="year sm:text-2xl sm:font-extrabold">
                     <p>{image.year}</p>
                   </div>
                 </div>
