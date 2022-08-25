@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import travelImages from "../pages/travel_images.js";
+import travelImages from "./travel_images.js";
 
 import { BiRightArrow, BiLeftArrow } from "react-icons/bi";
 
