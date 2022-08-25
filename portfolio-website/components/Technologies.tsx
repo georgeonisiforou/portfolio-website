@@ -42,24 +42,14 @@ export default function Technologies() {
         <div className="sm:pr-32">
           <ul>
             {technologies1.map((tech, key) => (
-              <Reveal key={key} keyframes={customAnimation} triggerOnce>
-                <Technology tech={tech} />
-                {/* <li className="p-2" key={tech.id}>
-                  <div className="flex">
-                    <BiRightArrow className="mr-8" />
-                    {tech.name}
-                  </div>
-                </li> */}
-              </Reveal>
+              <Technology tech={tech} key={key} />
             ))}
           </ul>
         </div>
         <div className="sm:pl-32 pl-8">
           <ul>
             {technologies2.map((tech, key) => (
-              <Reveal key={key} keyframes={customAnimation} triggerOnce>
-                <Technology tech={tech} />
-              </Reveal>
+              <Technology tech={tech} key={key} />
             ))}
           </ul>
         </div>

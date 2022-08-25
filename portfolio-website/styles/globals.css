@@ -107,18 +107,13 @@ body {
   animation: rotateText 5000ms ease-in-out;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 480px) {
   .text li {
     font-size: 2rem;
   }
   .recommendation {
     font-size: 1rem;
   }
-}
-
-.text li.bounce {
-  /* animation: bounceLetter 5000ms alternate infinite
-    cubic-bezier(0.2, 0.65, 0.6, 1); */
 }
 
 .text li.ghost {
@@ -200,16 +195,10 @@ body {
 
 .toggleMenu {
   display: none;
-  z-index: 9000;
   position: absolute;
-
   right: 2rem;
   font-size: 2rem;
   cursor: pointer;
-}
-
-.toggleMenu:hover {
-  transform: rotate(360deg);
 }
 
 .mobileMenu {
@@ -229,6 +218,7 @@ body {
   transition: transform 250ms ease-in;
   font-size: 3rem;
   font-weight: 700;
+  z-index: 9999;
 }
 
 .showMenu {
@@ -620,12 +610,12 @@ a:active {
 
   .left-arrow {
     left: 8px;
-    font-size: 1rem;
+    font-size: 2.75rem;
     color: #fff;
   }
   .right-arrow {
     right: 8px;
-    font-size: 1rem;
+    font-size: 2.75rem;
     color: #fff;
   }
 }
@@ -744,7 +734,7 @@ a:active {
   }
   .message {
     display: block;
-    left: 140px;
+    left: 150px;
     animation: opencloseSmallScreen 16s ease-in-out infinite;
   }
 }
@@ -1055,9 +1045,6 @@ a:active {
   border-radius: 10px;
 }
 
-.work-content {
-}
-
 .work-content li {
   margin-left: 2rem;
   list-style: disc;
@@ -1076,5 +1063,12 @@ a:active {
 @media (max-width: 480px) {
   .workContainer {
     width: 100%;
+  }
+  .card-title::after {
+    bottom: -2rem;
+    width: calc(100% + 50%);
+  }
+  .footerCopyright {
+    font-size: 0.5rem;
   }
 }

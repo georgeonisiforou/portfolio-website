@@ -37,7 +37,7 @@ const Header = () => {
   };
 
   return (
-    <Fade triggerOnce className="z-50 relative">
+    <div className="z-50 relative">
       <div className="flex flex-row w-full justify-between content-center items-center p-8 header z-50 top-0">
         <div>
           <h1 className=" text-2xl sm:text-5xl text-slate-800 font-bold fancy-title">
@@ -70,7 +70,7 @@ const Header = () => {
         </div>
 
         <div className="text-slate-800 text-xl currentWork headerCurrentJob invisible sm:visible ">
-          Currently Software Engineer Intern at VasLabs Ltd
+          Currently open to work / collaborate
         </div>
         <div className="text-slate-800 sm:  text-xl font-medium flex flex-row navBar">
           <ul className="flex flex-row">
@@ -126,7 +126,7 @@ const Header = () => {
           </Link>
         </div>
       </div>
-    </Fade>
+    </div>
   );
 };
 

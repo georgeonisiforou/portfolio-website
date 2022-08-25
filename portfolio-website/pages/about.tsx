@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useRef } from "react";
 import aboutpic from "../assets/images/aboutpic.jpg";
 import Image from "next/image";
-import travelImages from "./travel_images.js";
+import travelImages from "../components/travel_images.js";
 import Carousel from "../components/Carousel";
 import "animate.css";
 

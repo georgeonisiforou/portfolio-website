@@ -87,7 +87,7 @@ const travelImages = [
     image: "/travel/highlands.jpg",
     year: 2019,
     city: "Highlands",
-    country: "Scorland",
+    country: "Scotland",
     index: 13,
   },
   {
