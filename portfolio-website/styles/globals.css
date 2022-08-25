@@ -11,7 +11,97 @@
     url("/assets/fonts/PPRadioGrotesk-RegularItalic.otf") format("truetype"),
     url("/assets/fonts/PPRadioGrotesk-Ultralight.otf") format("truetype"),
     url("/assets/fonts/PPRadioGrotesk-UltralightItalic.otf") format("truetype");
-  font-weight: 100;
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PP Radio Grotesk";
+  src: url("/assets/fonts/PPRadioGrotesk-Regular.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-Black.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-BlackItalic.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-RegularItalic.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-Ultralight.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-UltralightItalic.otf") format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "PP Radio Grotesk";
+  src: url("/assets/fonts/PPRadioGrotesk-Regular.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-Black.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-BlackItalic.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-RegularItalic.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-Ultralight.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-UltralightItalic.otf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "PP Radio Grotesk";
+  src: url("/assets/fonts/PPRadioGrotesk-Regular.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-Black.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-BlackItalic.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-RegularItalic.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-Ultralight.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-UltralightItalic.otf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PP Radio Grotesk";
+  src: url("/assets/fonts/PPRadioGrotesk-Regular.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-Black.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-BlackItalic.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-RegularItalic.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-Ultralight.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-UltralightItalic.otf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "PP Radio Grotesk";
+  src: url("/assets/fonts/PPRadioGrotesk-Regular.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-Black.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-BlackItalic.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-RegularItalic.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-Ultralight.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-UltralightItalic.otf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "PP Radio Grotesk";
+  src: url("/assets/fonts/PPRadioGrotesk-Regular.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-Black.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-BlackItalic.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-RegularItalic.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-Ultralight.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-UltralightItalic.otf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "PP Radio Grotesk";
+  src: url("/assets/fonts/PPRadioGrotesk-Regular.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-Black.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-BlackItalic.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-RegularItalic.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-Ultralight.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-UltralightItalic.otf") format("truetype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "PP Radio Grotesk";
+  src: url("/assets/fonts/PPRadioGrotesk-Regular.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-Black.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-BlackItalic.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-RegularItalic.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-Ultralight.otf") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-UltralightItalic.otf") format("truetype");
+  font-weight: 900;
 }
 
 @font-face {
@@ -25,11 +115,14 @@
   font-weight: 100;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "PP Radio Grotesk";
+  font-family: "PP Radio Grotesk", "Roboto", Georgia, "Times New Roman", Times,
+    serif, sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }

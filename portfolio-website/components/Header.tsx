@@ -96,7 +96,7 @@ const Header = () => {
             Software Developer
           </div>
         </div>
-        <div className="absolute top-32 left-8 text-xs">
+        <div className="absolute top-24 left-8 text-xs">
           Based in Limassol
           <br />
           Cyprus
