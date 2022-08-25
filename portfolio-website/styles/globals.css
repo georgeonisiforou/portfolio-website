@@ -7,12 +7,12 @@
 
 @font-face {
   font-family: "PP Radio Grotesk";
-  src: url("/assets/fonts/PPRadioGrotesk-Regular.woff") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-Black.woff") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-BlackItalic.woff") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-RegularItalic.woff") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-Ultralight.woff") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-UltralightItalic.woff") format("truetype");
+  src: url("/assets/fonts/PPRadioGrotesk-Regular.otf") format("opentype"),
+    url("/assets/fonts/PPRadioGrotesk-Black.otf") format("opentype"),
+    url("/assets/fonts/PPRadioGrotesk-BlackItalic.otf") format("opentype"),
+    url("/assets/fonts/PPRadioGrotesk-RegularItalic.otf") format("opentype"),
+    url("/assets/fonts/PPRadioGrotesk-Ultralight.otf") format("opentype"),
+    url("/assets/fonts/PPRadioGrotesk-UltralightItalic.otf") format("opentype");
   font-weight: 100 900;
   font-display: swap;
   font-style: normal;
