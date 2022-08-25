@@ -11,7 +11,9 @@
     url("/assets/fonts/PPRadioGrotesk-RegularItalic.otf") format("truetype"),
     url("/assets/fonts/PPRadioGrotesk-Ultralight.otf") format("truetype"),
     url("/assets/fonts/PPRadioGrotesk-UltralightItalic.otf") format("truetype");
-  font-weight: 100;
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
 }
 
 @font-face {
@@ -119,7 +121,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "PP Radio Grotesk", "Roboto", sans-serif;
+  font-family: "PP Radio Grotesk", "Roboto", Georgia, "Times New Roman", Times,
+    serif, sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
