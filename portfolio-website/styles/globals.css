@@ -113,11 +113,13 @@
   font-weight: 100;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "PP Radio Grotesk";
+  font-family: "PP Radio Grotesk", "Roboto", sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
