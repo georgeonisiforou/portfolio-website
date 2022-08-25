@@ -1,16 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import csslogo from "../assets/images/css-svgrepo-com.svg";
-import gitlogo from "../assets/images/git-svgrepo-com.svg";
-import githublogo from "../assets/images/github-svgrepo-com.svg";
-import htmllogo from "../assets/images/html-svgrepo-com.svg";
-import jslogo from "../assets/images/js-svgrepo-com.svg";
-import nextjslogo from "../assets/images/nextjs-svgrepo-com.svg";
-import nodejslogo from "../assets/images/nodejs-svgrepo-com.svg";
-import reactlogo from "../assets/images/react-svgrepo-com.svg";
-import tailwindlogo from "../assets/images/tailwindcss-svgrepo-com.svg";
-import typescriptlogo from "../assets/images/typescript-svgrepo-com.svg";
-import Reveal from "react-awesome-reveal";
+import csslogo from "../public/assets/images/css-svgrepo-com.svg";
+import gitlogo from "../public/assets/images/git-svgrepo-com.svg";
+import githublogo from "../public/assets/images/github-svgrepo-com.svg";
+import htmllogo from "../public/assets/images/html-svgrepo-com.svg";
+import jslogo from "../public/assets/images/js-svgrepo-com.svg";
+import nextjslogo from "../public/assets/images/nextjs-svgrepo-com.svg";
+import nodejslogo from "../public/assets/images/nodejs-svgrepo-com.svg";
+import reactlogo from "../public/assets/images/react-svgrepo-com.svg";
+import tailwindlogo from "../public/assets/images/tailwindcss-svgrepo-com.svg";
+import typescriptlogo from "../public/assets/images/typescript-svgrepo-com.svg";
 import { keyframes } from "@emotion/react";
 
 export default function TechnologiesLogos() {
