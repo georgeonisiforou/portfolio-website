@@ -5,17 +5,17 @@
 
 @font-face {
   font-family: "PP Radio Grotesk";
-  src: url("/assets/fonts/PPRadioGrotesk-Regular.otf") format("opentype"),
-    url("/assets/fonts/PPRadioGrotesk-Black.otf") format("opentype"),
-    url("/assets/fonts/PPRadioGrotesk-BlackItalic.otf") format("opentype"),
-    url("/assets/fonts/PPRadioGrotesk-RegularItalic.otf") format("opentype"),
-    url("/assets/fonts/PPRadioGrotesk-Ultralight.otf") format("opentype"),
-    url("/assets/fonts/PPRadioGrotesk-UltralightItalic.otf") format("opentype");
+  src: url("/assets/fonts/PPRadioGrotesk-Regular.woff") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-Black.woff") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-BlackItalic.woff") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-RegularItalic.woff") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-Ultralight.woff") format("truetype"),
+    url("/assets/fonts/PPRadioGrotesk-UltralightItalic.woff") format("truetype");
   font-weight: 100 900;
   font-display: swap;
   font-style: normal;
 }
-
+/* 
 @font-face {
   font-family: "PP Radio Grotesk";
   src: url("/assets/fonts/PPRadioGrotesk-Regular.otf") format("truetype"),
@@ -113,7 +113,7 @@
     url("/assets/fonts/PPNeueMontreal-SemiBolditalic.otf") format("truetype"),
     url("/assets/fonts/PPNeueMontreal-Thin.otf") format("truetype");
   font-weight: 100;
-}
+} */
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
@@ -121,8 +121,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "PP Radio Grotesk", "Roboto", Georgia, "Times New Roman", Times,
-    serif, sans-serif;
+  font-family: "PP Radio Grotesk", "Roboto";
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
