@@ -718,6 +718,16 @@ a:active {
   }
 }
 
+@media (max-width: 820px) {
+  .left-arrow {
+    color: #fff;
+  }
+
+  .right-arrow {
+    color: #fff;
+  }
+}
+
 @keyframes click {
   0% {
     transform: scale(1);
@@ -1186,7 +1196,7 @@ a:active {
 
 @media (max-width: 860px) {
   .card-title::after {
-    bottom: -2rem;
+    bottom: -3rem;
     width: calc(100% + 1rem);
   }
 }
