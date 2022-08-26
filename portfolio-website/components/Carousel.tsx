@@ -20,7 +20,6 @@ export default function Carousel() {
     <div className="carousel">
       <BiLeftArrow className="left-arrow" onClick={prevSlide} />
       <BiRightArrow className="right-arrow" onClick={nextSlide} />
-
       {travelImages.map((image, key) => {
         return (
           <div

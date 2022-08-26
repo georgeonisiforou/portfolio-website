@@ -3,7 +3,7 @@ import { BsFillFileEarmarkPdfFill, BsGithub } from "react-icons/bs";
 
 export default function Projects() {
   return (
-    <div className="flex flex-col justify-center p-8 w-screen gap-8 projectsContainer text-3xl mt-24">
+    <div className="flex flex-col justify-center p-8 w-screen gap-8 projectsContainer text-3xl lg:mt-24 mt-48 mb-20 lg:mb-0">
       <h1 className="font-bold text-5xl mb-16">STILL IN PROGRESS...</h1>
 
       <h2>But since you are already here &#128064;:</h2>

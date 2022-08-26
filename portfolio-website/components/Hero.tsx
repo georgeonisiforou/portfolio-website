@@ -21,7 +21,7 @@ export default function Hero() {
   return (
     <div className="sm:flex flex-col content-between items-stretch place-content-between mt-40 relative z-0  heroContainer">
       <div className="flex sm:flex-row flex-col items-center content-center justify-between w-screen">
-        <div className="sm:left-20 sm:relative sm:top-16 sm:w-1/3 z-0 my-8 sm:my-0">
+        <div className="sm:left-20 sm:relative lg:top-16 sm:w-1/3 z-0 my-8 sm:my-0">
           <Image
             src={mypic}
             alt=""
@@ -35,21 +35,21 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-end relative sm:pr-16 sm:pl-16 sm:mr-40 pl-4  mr-4 sm:w-1/3">
-          <h1 className="text-5xl sm:text-8xl text-slate-800 font-bold">
+        <div className="flex flex-col justify-center items-end relative lg:pr-16 sm:pl-16 lg:mr-40 pl-4  mr-4 sm:w-1/3">
+          <h1 className="text-5xl lg:text-7xl xl:text-8xl md:text-5xl text-slate-800 font-bold">
             GEORGE ONISIFOROU
           </h1>
 
-          <h2 className="text-sm text-slate-600 sm:text-2xl mb-16 heroSoftwareDeveloper">
+          <h2 className="text-sm text-slate-600 lg:text-2xl mb-16 heroSoftwareDeveloper">
             Software Developer
           </h2>
         </div>
       </div>
-      <div className="sm:flex justify-end pl-4 pr-4 sm:mr-56 sm:mt-64 mb-12">
+      <div className="sm:flex justify-end pl-4 pr-4 sm:mr-56 sm:mt-48 lg:mt-64 mb-12">
         <div className=" sm:text-2xl text-justify max-w-xl">
           <h3>
-            Newly born Web Developer with a strong lean on the frontend side. I
-            try to create minimalistic user-friendly interfaces.
+            Newly born Web Developer with a strong lean on the front-end side. I
+            try creating minimalistic and user-friendly interfaces.
           </h3>
           <h3 className="mt-12">
             When I&apos;m not working on a visual interface, I&apos;m probably

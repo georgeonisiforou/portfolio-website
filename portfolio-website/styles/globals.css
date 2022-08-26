@@ -199,7 +199,7 @@ body {
   animation: rotateText 5000ms ease-in-out;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .text li {
     font-size: 2rem;
   }
@@ -295,7 +295,7 @@ body {
 
 .mobileMenu {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   row-gap: 1em;
   flex-direction: column;
@@ -311,11 +311,12 @@ body {
   font-size: 3rem;
   font-weight: 700;
   z-index: 9999;
+  padding-bottom: 2.5rem;
 }
 
 .showMenu {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   row-gap: 1em;
   flex-direction: column;
@@ -327,13 +328,18 @@ body {
 }
 
 .mobMenuItem {
-  width: 100%;
+  width: 80%;
   text-align: center;
-  margin: 2rem;
+  margin: 1rem;
   text-transform: uppercase;
+  border: 1px solid;
+  border-radius: 5px;
+  background: linear-gradient(rgba(44, 52, 66, 0.9), rgb(43, 54, 52));
+
+  box-shadow: 5px 10px 10px #2c3333;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .toggleMenu {
     display: block;
   }
@@ -442,7 +448,7 @@ a:active {
   transform: scale(1);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .asterisk {
     padding-left: 1rem;
     font-size: 0.5rem;
@@ -695,7 +701,7 @@ a:active {
   z-index: 30;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .photoInfo {
     height: 25%;
   }
@@ -740,7 +746,7 @@ a:active {
   transform: rotate(-30deg) skew(25deg);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .logoUl li {
     transform: rotate(0deg) skew(0deg);
     margin: 1rem;
@@ -787,7 +793,7 @@ a:active {
 
 .contactContainer {
   width: 100vw;
-  min-height: 75vh;
+  min-height: 90vh;
   z-index: 0;
   position: relative;
 }
@@ -819,17 +825,6 @@ a:active {
   animation: openclose 16s ease-in-out infinite;
 }
 
-@media (max-width: 480px) {
-  .contactText {
-    padding-left: 1rem;
-    font-size: 1rem;
-  }
-  .message {
-    display: block;
-    left: 150px;
-    animation: opencloseSmallScreen 16s ease-in-out infinite;
-  }
-}
 @keyframes openclose {
   0% {
     top: 0;
@@ -1086,6 +1081,30 @@ a:active {
   }
 }
 
+@media (max-width: 640px) {
+  .contactText {
+    padding-left: 1rem;
+    font-size: 1rem;
+  }
+  .message {
+    display: block;
+    left: 140px;
+    animation: opencloseSmallScreen 16s ease-in-out infinite;
+  }
+}
+
+@media (max-width: 840px) {
+  .contactText {
+    padding-left: 1rem;
+    font-size: 1rem;
+  }
+  .message {
+    display: block;
+    left: 140px;
+    animation: opencloseSmallScreen 16s ease-in-out infinite;
+  }
+}
+
 .projectsContainer {
   height: 88vh;
 }
@@ -1152,15 +1171,22 @@ a:active {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .workContainer {
     width: 100%;
   }
   .card-title::after {
     bottom: -2rem;
-    width: calc(100% + 50%);
+    width: calc(100% + 1rem);
   }
   .footerCopyright {
     font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .card-title::after {
+    bottom: -2rem;
+    width: calc(100% + 1rem);
   }
 }

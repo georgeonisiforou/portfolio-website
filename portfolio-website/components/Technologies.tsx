@@ -39,14 +39,14 @@ export default function Technologies() {
         Technologies
       </h3>
       <div className="flex flex-row justify-center text-center sm:p-16 sm:text-3xl font-light">
-        <div className="sm:pr-32">
+        <div className="lg:pr-32">
           <ul>
             {technologies1.map((tech, key) => (
               <Technology tech={tech} key={key} />
             ))}
           </ul>
         </div>
-        <div className="sm:pl-32 pl-8">
+        <div className="lg:pl-32 pl-8">
           <ul>
             {technologies2.map((tech, key) => (
               <Technology tech={tech} key={key} />
