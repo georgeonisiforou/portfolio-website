@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useRef } from "react";
-import aboutpic from "../assets/images/aboutpic.jpg";
+import aboutpic from "../public/assets/images/aboutpic.jpg";
 import Image from "next/image";
 import travelImages from "../components/travel_images.js";
 import Carousel from "../components/Carousel";
@@ -37,7 +37,7 @@ export default function About() {
   };
 
   return (
-    <div className="sm:p-16 p-4 mt-48 relative z-0">
+    <div className="sm:p-16 p-4 mt-48 mb-48 relative z-0">
       <div className="mb-32 sm:w-1/3 relative">
         <p className="sm:font-medium text-xs sm:text-base text-slate-500 ml-1 mb-2">
           GEORGE ONISIFOROU - EST 1990
@@ -62,7 +62,7 @@ export default function About() {
       </div>
 
       <div className="flex justify-start sm:text-2xl sm:mt-32 mt-96">
-        <div className="sm:w-1/2 text-justify p-4 sm:pr-8">
+        <div className="lg:w-1/2 text-justify p-4 sm:pr-8">
           <p className="animate__animated animate__backInLeft">
             So, here&apos;s my journey so far...
           </p>
@@ -111,11 +111,11 @@ export default function About() {
             </button>
           </h3>
         </div>
-        <div className="flex flex-col sm:flex-row justify-between sm:text-2xl p-4 sm:p-0 hobbyContainer">
-          <p className="sm:w-1/4 text-justify hobbyText" key={btnClicked}>
+        <div className="flex flex-col lg:flex-row justify-between sm:text-2xl p-4 sm:p-0 hobbyContainer">
+          <p className="lg:w-1/4 text-justify hobbyText" key={btnClicked}>
             {btnClicked}
           </p>
-          <div className="sm:w-2/3 w-screen sm:mr-12 absolute left-0 sm:relative mt-48 sm:mt-0">
+          <div className="lg:w-2/3 max-w-screen-lg lg:mr-12 lg:relative mt-8 lg:mt-0">
             <Carousel />
           </div>
         </div>

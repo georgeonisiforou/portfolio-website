@@ -55,9 +55,11 @@ const Header = () => {
           <FiMenu />
         </button>
 
-        <div className="flex flex-col headerLocation invisible sm:visible ">
-          <div className="text-slate-800 text-xl">Based in Limassol</div>
-          <div className="text-slate-800 text-xl flex baseLocation">
+        <div className="flex flex-col headerLocation invisible lg:visible ">
+          <div className="text-slate-800 text-sm lg:text-xl">
+            Based in Limassol
+          </div>
+          <div className="text-slate-800 text-sm lg:text-xl flex baseLocation">
             <a
               href="https://www.google.com/maps/@34.9753931,33.6807325,8.92z"
               target="_blank"
@@ -69,7 +71,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="text-slate-800 text-xl currentWork headerCurrentJob invisible sm:visible ">
+        <div className="text-slate-800 text-sm lg:text-xl currentWork headerCurrentJob invisible lg:visible ">
           Currently open to work / collaborate
         </div>
         <div className="text-slate-800 sm:  text-xl font-medium flex flex-row navBar">

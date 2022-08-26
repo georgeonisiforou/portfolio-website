@@ -4,7 +4,7 @@ import { SiTinder } from "react-icons/si";
 import { MdCopyright } from "react-icons/md";
 export default function Footer() {
   return (
-    <div className="flex justify-between items-center sm:p-8 p-4 font-semibold footer">
+    <div className="flex justify-between items-center lg:p-8 p-2 font-semibold footer">
       <div className="sm:text-lg text-xs footerCopyright">
         <h4>George Onisiforou</h4>
         <h4>Software Developer</h4>
