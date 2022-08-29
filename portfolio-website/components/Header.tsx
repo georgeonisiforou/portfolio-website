@@ -107,6 +107,13 @@ const Header = () => {
           <IoMdCloseCircle />
         </button>
         <div className="mobMenuItem">
+          <Link href="/">
+            <a href="" onClick={openMenu}>
+              Home
+            </a>
+          </Link>
+        </div>
+        <div className="mobMenuItem">
           <Link href="/projects">
             <a href="" onClick={openMenu}>
               Projects

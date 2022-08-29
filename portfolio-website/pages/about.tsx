@@ -8,7 +8,7 @@ import "animate.css";
 
 export default function About() {
   const footballHobby =
-    "I love watching and playing football (even though I am only watching lately). I'm a massive Liverpool FC fan and if I'm not answering to your calls or messages, then most probably I'm watching them play.";
+    "I love watching and playing football (even though I am only watching lately). I'm a massive Liverpool FC fan and if I'm not answering your calls or messages, then most probably I'm watching them play.";
 
   const foodHobby =
     "I'm a culinary enthusiast and an amateur cook. I could be a food blogger but I keep the photos to myself. I'm always in the mood for a good juicy smashed burger.";
@@ -53,7 +53,7 @@ export default function About() {
         <div className="sm:w-1/2 w-screen absolute left-0 mt-24 sm:mt-0 sm:relative">
           <Image
             src={aboutpic}
-            alt=""
+            alt="www.georgeonisiforou.com taking photo in Scottish Highlands"
             // width="700px"
             // height="500px"
             className="sm:rounded-lg relative"
@@ -70,7 +70,7 @@ export default function About() {
           <p className="animate__animated animate__backInRight">
             I studied Computer Science with Business Management at the
             University of Manchester and then did a Master&apos;s in Shipping at
-            Cardiff University. I worked in a big shipping company in Limassol
+            Cardiff University. I worked for a big shipping company in Limassol
             for 6+ years until I started reminiscing my coding days back from
             university. I started experimenting with code again after a big gap
             in my career and I fell in love with Web Development. Several

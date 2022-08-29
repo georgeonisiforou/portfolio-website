@@ -1,8 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import mypic from "../public/travel/profile.jpg";
-import { Fade } from "react-awesome-reveal";
-import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import { CgAsterisk } from "react-icons/cg";
 
@@ -24,7 +22,7 @@ export default function Hero() {
         <div className="sm:left-20 sm:relative lg:top-16 sm:w-1/3 z-0 my-8 sm:my-0">
           <Image
             src={mypic}
-            alt=""
+            alt="www.georgeonisiforou.com profile picture"
             // width="640px"
             // height="420px"
             className="sm:rounded-lg relative"
