@@ -25,7 +25,7 @@ export default function Contact() {
       <div className="flex p-8 ml-8 mb-4 mt-32">
         <div className="">
           <CopyToClipboard text="georgeon2016@gmail.com">
-            <div className="lg:text-6xl sm:text-4xl text-2xl flex flex-col items-center font-semibold emailContainer">
+            <div className="lg:text-6xl sm:text-4xl text-2xl flex flex-col items-center  emailContainer">
               <h3 className=" clickToCopy text-2xl ">{copyText}</h3>
 
               <button onClick={copied} className="email after:bg-slate-100">

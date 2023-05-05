@@ -3,8 +3,10 @@ import { BsGithub, BsLinkedin, BsInstagram, BsSpotify } from "react-icons/bs";
 import { SiTinder } from "react-icons/si";
 import { MdCopyright } from "react-icons/md";
 export default function Footer() {
+  const date = new Date().getFullYear();
+
   return (
-    <div className="flex justify-between items-center lg:p-8 p-2 font-semibold footer">
+    <div className="flex justify-between items-center lg:p-8 p-2 footer">
       <div className="sm:text-lg text-xs footerCopyright">
         <h4>George Onisiforou</h4>
         <h4>Software Developer</h4>
@@ -61,7 +63,7 @@ export default function Footer() {
 
         <div className="flex sm:flex-row flex-col justify-center items-center">
           <div className="flex justify-center items-center">
-            <MdCopyright /> 2022
+            <MdCopyright /> {date}
           </div>
           &nbsp;George Onisiforou
         </div>

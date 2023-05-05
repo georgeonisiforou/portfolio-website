@@ -13,109 +13,10 @@
     url("/assets/fonts/PPRadioGrotesk-RegularItalic.otf") format("opentype"),
     url("/assets/fonts/PPRadioGrotesk-Ultralight.otf") format("opentype"),
     url("/assets/fonts/PPRadioGrotesk-UltralightItalic.otf") format("opentype");
-  font-weight: 100 900;
+
   font-display: swap;
   font-style: normal;
 }
-/* 
-@font-face {
-  font-family: "PP Radio Grotesk";
-  src: url("/assets/fonts/PPRadioGrotesk-Regular.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-Black.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-BlackItalic.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-RegularItalic.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-Ultralight.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-UltralightItalic.otf") format("truetype");
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: "PP Radio Grotesk";
-  src: url("/assets/fonts/PPRadioGrotesk-Regular.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-Black.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-BlackItalic.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-RegularItalic.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-Ultralight.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-UltralightItalic.otf") format("truetype");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "PP Radio Grotesk";
-  src: url("/assets/fonts/PPRadioGrotesk-Regular.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-Black.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-BlackItalic.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-RegularItalic.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-Ultralight.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-UltralightItalic.otf") format("truetype");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "PP Radio Grotesk";
-  src: url("/assets/fonts/PPRadioGrotesk-Regular.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-Black.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-BlackItalic.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-RegularItalic.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-Ultralight.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-UltralightItalic.otf") format("truetype");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "PP Radio Grotesk";
-  src: url("/assets/fonts/PPRadioGrotesk-Regular.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-Black.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-BlackItalic.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-RegularItalic.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-Ultralight.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-UltralightItalic.otf") format("truetype");
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: "PP Radio Grotesk";
-  src: url("/assets/fonts/PPRadioGrotesk-Regular.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-Black.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-BlackItalic.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-RegularItalic.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-Ultralight.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-UltralightItalic.otf") format("truetype");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "PP Radio Grotesk";
-  src: url("/assets/fonts/PPRadioGrotesk-Regular.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-Black.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-BlackItalic.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-RegularItalic.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-Ultralight.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-UltralightItalic.otf") format("truetype");
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: "PP Radio Grotesk";
-  src: url("/assets/fonts/PPRadioGrotesk-Regular.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-Black.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-BlackItalic.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-RegularItalic.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-Ultralight.otf") format("truetype"),
-    url("/assets/fonts/PPRadioGrotesk-UltralightItalic.otf") format("truetype");
-  font-weight: 900;
-}
-
-@font-face {
-  font-family: "PP Neue Montreal";
-  src: url("/assets/fonts/PPNeueMontreal-Bold.otf") format("truetype"),
-    url("/assets/fonts/PPNeueMontreal-Book.otf") format("truetype"),
-    url("/assets/fonts/PPNeueMontreal-Italic.otf") format("truetype"),
-    url("/assets/fonts/PPNeueMontreal-Medium.otf") format("truetype"),
-    url("/assets/fonts/PPNeueMontreal-SemiBolditalic.otf") format("truetype"),
-    url("/assets/fonts/PPNeueMontreal-Thin.otf") format("truetype");
-  font-weight: 100;
-} */
 
 html,
 body {
@@ -124,6 +25,15 @@ body {
   font-family: "PP Radio Grotesk", "Roboto";
   scroll-behavior: smooth;
   overflow-x: hidden;
+  background: #fdefef;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.layoutContainer {
+  /* background: #cdd0cb; */
+  background: #fdefef;
 }
 
 .base-page-size {
@@ -484,16 +394,6 @@ a:active {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: black;
-    background: rgb(252, 245, 245);
-  }
-}
-
 .currentWork {
   max-width: 250px;
 }
@@ -570,7 +470,7 @@ a:active {
 
 .hobbyContainer {
   animation: fade-in 1s;
-  height: 70vh;
+  height: 300px;
   /* width: 90vw; */
 }
 
@@ -830,7 +730,7 @@ a:active {
 
 .contactText {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 500;
   overflow: hidden;
   text-transform: uppercase;
   white-space: nowrap;
@@ -1111,7 +1011,20 @@ a:active {
   }
 }
 
-@media (max-width: 640px) {
+@media only screen and (min-width: 390px) and (max-width: 767px) {
+  .contactText {
+    padding-left: 1rem;
+    font-size: 1rem;
+  }
+  .message {
+    display: block;
+    left: 140px;
+
+    animation: opencloseSmallScreen 16s ease-in-out infinite;
+  }
+}
+
+@media only screen and (min-width: 768px) and(max-width: 840px) {
   .contactText {
     padding-left: 1rem;
     font-size: 1rem;
@@ -1121,22 +1034,6 @@ a:active {
     left: 140px;
     animation: opencloseSmallScreen 16s ease-in-out infinite;
   }
-}
-
-@media (max-width: 840px) {
-  .contactText {
-    padding-left: 1rem;
-    font-size: 1rem;
-  }
-  .message {
-    display: block;
-    left: 140px;
-    animation: opencloseSmallScreen 16s ease-in-out infinite;
-  }
-}
-
-.projectsContainer {
-  height: 88vh;
 }
 
 .workContainer {
@@ -1219,4 +1116,58 @@ a:active {
     bottom: -3rem;
     width: calc(100% + 1rem);
   }
+}
+
+.projectsContainer {
+  display: flex;
+  justify-content: center;
+  min-height: 88vh;
+}
+
+.projectTitle {
+  font-size: 4rem;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+}
+
+.projectDescription {
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin-top: 8rem;
+}
+
+.Blob {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to right, #01d9e1, #74db8c);
+  position: absolute;
+  /* left: 50%;
+  top: 50%; */
+  border-radius: 50%;
+  translate: -50% -50%;
+  animation: rotate 20s infinite;
+  filter: blur(20px);
+  color: #000000;
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+
+  50% {
+    scale: 1 1.3;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
+
+.Blur {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
+  backdrop-filter: blur(20px);
 }

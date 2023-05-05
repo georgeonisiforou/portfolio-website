@@ -5,12 +5,9 @@ import TechnologiesLogos from "../components/TechnologiesLogos";
 import Contact from "../components/Contact";
 import WorkExperience from "../components/WorkExperience";
 
-// import CustomCursor from "../components/CustomCursor";
-
 const Home: NextPage = () => {
   return (
     <div>
-      {/* <CustomCursor /> */}
       <Hero />
       <Technologies />
       <TechnologiesLogos />

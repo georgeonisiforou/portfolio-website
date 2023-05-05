@@ -37,12 +37,12 @@ export default function About() {
   };
 
   return (
-    <div className="sm:p-16 p-4 mt-48 mb-48 relative z-0">
+    <div className="sm:p-16 sm:pb-4 p-4 mt-48 mb-2 relative z-0">
       <div className="mb-32 sm:w-1/3 relative">
         <p className="sm:font-medium text-xs sm:text-base text-slate-500 ml-1 mb-2">
           GEORGE ONISIFOROU - EST 1990
         </p>
-        <h1 className="text-5xl sm:text-8xl text-slate-900 font-bold fancy-title uppercase">
+        <h1 className="text-5xl sm:text-8xl text-slate-900 fancy-title uppercase">
           Passionate Web Developer
         </h1>
       </div>
@@ -86,9 +86,7 @@ export default function About() {
         </div>
       </div>
       <div className=" p-4 mt-48 sm:mb-32">
-        <h2 className="sm:text-5xl text-2xl mt-8 mb-16 font-semibold">
-          Personal Interests.
-        </h2>
+        <h2 className="sm:text-5xl text-2xl mt-8 mb-16">Personal Interests.</h2>
         <div className="flex justify-between sm:text-3xl text-xl mb-12">
           <h3>
             <button className=" hobby-link" onClick={footballClicked}>
@@ -112,12 +110,15 @@ export default function About() {
           </h3>
         </div>
         <div className="flex flex-col lg:flex-row justify-between sm:text-2xl p-4 sm:p-0 hobbyContainer">
-          <p className="lg:w-1/4 text-justify hobbyText" key={btnClicked}>
-            {btnClicked}
+          <p
+            className="lg:w-full text-justify flex justify-center items-center hobbyText"
+            key={btnClicked}
+          >
+            <div className="sm:w-full lg:w-2/4">{btnClicked}</div>
           </p>
-          <div className="lg:w-2/3 max-w-screen-lg lg:mr-12 lg:relative mt-8 lg:mt-0">
+          {/* <div className="lg:w-2/3 max-w-screen-lg lg:mr-12 lg:relative mt-8 lg:mt-0">
             <Carousel />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

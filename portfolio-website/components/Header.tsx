@@ -37,10 +37,10 @@ const Header = () => {
   };
 
   return (
-    <div className="z-50 relative">
+    <div className="z-50 relative ">
       <div className="flex flex-row w-full justify-between content-center items-center p-8 header z-50 top-0">
         <div>
-          <h1 className=" text-2xl sm:text-5xl text-slate-800 font-bold fancy-title">
+          <h1 className=" text-2xl sm:text-5xl text-slate-800 fancy-title">
             <Link href="/">
               <div className="fancyTitle flex">
                 <div className="titleLetter">G</div>
@@ -72,7 +72,7 @@ const Header = () => {
         </div>
 
         <div className="text-slate-800 text-sm lg:text-xl currentWork headerCurrentJob invisible lg:visible ">
-          Currently open to work / collaborate
+          Currently Front End Developer at TIOmarkets
         </div>
         <div className="text-slate-800 sm:  text-xl font-medium flex flex-row navBar">
           <ul className="flex flex-row">

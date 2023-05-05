@@ -1,17 +1,29 @@
-// import React from "react";
-// import { useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 
-// export default function CustomCursor() {
-//   const cursorRef = useRef(null);
+const FollowingBlob = () => {
+  const ref = useRef(null);
 
-//   useEffect(() => {
-//     document.addEventListener("mousemove", (event) => {
-//       const { clientX, clientY } = event;
-//       const mouseX = clientX - cursorRef.current.clientWidth / 2;
-//       const mouseY = clientY - cursorRef.current.clientHeight / 2;
-//       cursorRef.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-//     });
-//   }, []);
+  useEffect(() => {
+    const blob = ref.current;
 
-//   return <div className="customCursor" ref={cursorRef} />;
-// }
+    document.body.onpointermove = (event) => {
+      const { clientX, clientY } = event;
+
+      blob.animate(
+        {
+          left: `${clientX}px`,
+          top: `${clientY}px`,
+        },
+        { duration: 3000, fill: "forwards" }
+      );
+    };
+  }, []);
+
+  return (
+    <div className="cursorContainer">
+      <div className="Blob" ref={ref}></div>
+    </div>
+  );
+};
+
+export default FollowingBlob;

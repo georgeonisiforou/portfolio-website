@@ -4,9 +4,7 @@ import Work from "./Work";
 export default function WorkExperience() {
   return (
     <div className="mt-48 w-screen">
-      <h3 className="sm:ml-32 sm:m-4  text-5xl font-semibold mb-8 ml-4">
-        Work Experience
-      </h3>
+      <h3 className="sm:ml-32 sm:m-4  text-5xl mb-8 ml-4">Work Experience</h3>
       <div className="flex sm:flex-row flex-col sm:p-4 sm:ml-16 pr-8">
         <Work
           company="VasLabs LTD"

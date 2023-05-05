@@ -23,8 +23,6 @@ export default function Hero() {
           <Image
             src={mypic}
             alt="www.georgeonisiforou.com profile picture"
-            // width="640px"
-            // height="420px"
             className="sm:rounded-lg relative"
           />
           <div className="flex text-xs mt-4 asterisk">
@@ -34,7 +32,7 @@ export default function Hero() {
         </div>
 
         <div className="flex flex-col justify-center items-end relative lg:pr-16 sm:pl-16 lg:mr-40 pl-4  mr-4 sm:w-1/3">
-          <h1 className="text-5xl lg:text-7xl xl:text-8xl md:text-5xl text-slate-800 font-bold">
+          <h1 className="text-5xl lg:text-7xl xl:text-8xl md:text-5xl text-slate-800">
             GEORGE ONISIFOROU
           </h1>
 
