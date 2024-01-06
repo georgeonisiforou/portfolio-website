@@ -9,7 +9,10 @@ import nextjslogo from "../public/assets/images/nextjs-svgrepo-com.svg";
 import nodejslogo from "../public/assets/images/nodejs-svgrepo-com.svg";
 import reactlogo from "../public/assets/images/react-svgrepo-com.svg";
 import tailwindlogo from "../public/assets/images/tailwindcss-svgrepo-com.svg";
-import typescriptlogo from "../public/assets/images/typescript-svgrepo-com.svg";
+import sanitylogo from "../public/assets/images/sanity-svgrepo-com.svg";
+import framerlogo from "../public/assets/images/framer-svgrepo-com.svg";
+import styledcomponentslogo from "../public/assets/images/styled-components-1.svg";
+
 import { keyframes } from "@emotion/react";
 
 export default function TechnologiesLogos() {
@@ -23,7 +26,9 @@ export default function TechnologiesLogos() {
     nodejslogo,
     reactlogo,
     tailwindlogo,
-    typescriptlogo,
+    sanitylogo,
+    framerlogo,
+    styledcomponentslogo,
   ];
 
   const customAnimation = keyframes`
@@ -42,7 +47,7 @@ export default function TechnologiesLogos() {
     <div className="flex justify-center m-8">
       <div className=" flex justify-center sm:p-8 flex-wrap max-w-5xl">
         {logos.map((logo, key) => (
-          <div key={key} className="sm:m-8 m-2">
+          <div key={key} className="sm:m-10 m-2">
             <ul className="logoUl">
               <li>
                 <div className="imageWrapper">

@@ -44,8 +44,8 @@ export default function Hero() {
       <div className="sm:flex justify-end pl-4 pr-4 sm:mr-56 sm:mt-48 lg:mt-64 mb-12">
         <div className=" sm:text-2xl text-justify max-w-xl">
           <h3>
-            Newly born Web Developer with a strong lean on the front-end side. I
-            try creating minimalistic and user-friendly interfaces.
+            Web Developer with a strong lean on the front-end side. I try
+            creating minimalistic and user-friendly interfaces.
           </h3>
           <h3 className="mt-12">
             When I&apos;m not working on a visual interface, I&apos;m probably

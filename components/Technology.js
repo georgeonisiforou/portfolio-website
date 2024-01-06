@@ -6,7 +6,7 @@ export default function Technology({ tech }) {
     <div>
       <li className="p-2" key={tech.id}>
         <div className="flex">
-          <BiRightArrow className="mr-8" />
+          <BiRightArrow className="mr-2" />
           {tech.name}
         </div>
       </li>
