@@ -1114,7 +1114,7 @@ a:active {
 
 @media (max-width: 860px) {
   .card-title::after {
-    bottom: -3rem;
+    bottom: -1rem;
     width: calc(100% + 1rem);
   }
 }
