@@ -1038,6 +1038,7 @@ a:active {
 
 .workContainer {
   width: 40%;
+  min-width: 300px;
   background-image: url("https://images.unsplash.com/photo-1520085601670-ee14aa5fa3e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80");
   background-size: cover;
   transition: transform 500ms ease;
@@ -1098,7 +1099,7 @@ a:active {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .workContainer {
     width: 100%;
   }

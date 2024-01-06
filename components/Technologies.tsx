@@ -11,14 +11,16 @@ export default function Technologies() {
     { name: "JavaScript", image: "", id: 3 },
     { name: "Node.js", image: "", id: 4 },
     { name: "React", image: "", id: 5 },
+    { name: "Next.js", image: "", id: 6 },
   ];
 
   const technologies2 = [
-    { name: "Next.js", image: "", id: 6 },
     { name: "Git", image: "", id: 7 },
     { name: "GitHub", image: "", id: 8 },
-    { name: "TypeScript", image: "", id: 9 },
+    { name: "Styled components", image: "", id: 9 },
     { name: "TailwindCSS", image: "", id: 10 },
+    { name: "Sanity", image: "", id: 11 },
+    { name: "Framer Motion", image: "", id: 12 },
   ];
 
   const customAnimation = keyframes`
