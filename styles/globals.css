@@ -228,8 +228,8 @@ i,
   backdrop-filter: blur(0.5);
   color: #fff;
   transition: transform 350ms ease-in-out;
-  font-size: 3rem;
-  font-weight: 900;
+  font-size: 2rem;
+  font-weight: 700;
   z-index: 9999;
   padding-bottom: 2.5rem;
 }
@@ -257,8 +257,8 @@ i,
   position: fixed;
   inset: 0 0 0 0;
   transform: translateX(0%);
-  font-size: 3rem;
-  font-weight: 900;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .mobMenuItem {
@@ -1122,7 +1122,7 @@ a:active {
 .projectsContainer {
   display: flex;
   justify-content: center;
-  min-height: 88vh;
+  min-height: 80vh;
 }
 
 .projectTitle {

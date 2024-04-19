@@ -12,6 +12,7 @@ import tailwindlogo from "../public/assets/images/tailwindcss-svgrepo-com.svg";
 import sanitylogo from "../public/assets/images/sanity-svgrepo-com.svg";
 import framerlogo from "../public/assets/images/framer-svgrepo-com.svg";
 import styledcomponentslogo from "../public/assets/images/styled-components-1.svg";
+import typescriptLogo from "../public/assets/images/typescript-svgrepo-com.svg";
 
 import { keyframes } from "@emotion/react";
 
@@ -22,6 +23,7 @@ export default function TechnologiesLogos() {
     githublogo,
     htmllogo,
     jslogo,
+    typescriptLogo,
     nextjslogo,
     nodejslogo,
     reactlogo,

@@ -9,18 +9,19 @@ export default function Technologies() {
     { name: "HTML5", image: "", id: 1 },
     { name: "CSS", image: "", id: 2 },
     { name: "JavaScript", image: "", id: 3 },
-    { name: "Node.js", image: "", id: 4 },
-    { name: "React", image: "", id: 5 },
-    { name: "Next.js", image: "", id: 6 },
+    { name: "TypeScript", image: "", id: 4 },
+    { name: "Node.js", image: "", id: 5 },
+    { name: "React", image: "", id: 6 },
+    { name: "Next.js", image: "", id: 7 },
   ];
 
   const technologies2 = [
-    { name: "Git", image: "", id: 7 },
-    { name: "GitHub", image: "", id: 8 },
-    { name: "Styled components", image: "", id: 9 },
-    { name: "TailwindCSS", image: "", id: 10 },
-    { name: "Sanity", image: "", id: 11 },
-    { name: "Framer Motion", image: "", id: 12 },
+    { name: "Git", image: "", id: 8 },
+    { name: "GitHub", image: "", id: 9 },
+    { name: "Styled components", image: "", id: 10 },
+    { name: "TailwindCSS", image: "", id: 11 },
+    { name: "Sanity", image: "", id: 12 },
+    { name: "Framer Motion", image: "", id: 13 },
   ];
 
   const customAnimation = keyframes`

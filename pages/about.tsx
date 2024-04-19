@@ -87,7 +87,7 @@ export default function About() {
       </div>
       <div className=" p-4 mt-48 sm:mb-32">
         <h2 className="sm:text-5xl text-2xl mt-8 mb-16">Personal Interests.</h2>
-        <div className="flex justify-between sm:text-3xl text-xl mb-12">
+        <div className="flex justify-evenly sm:text-3xl text-xl mb-12">
           <h3>
             <button className=" hobby-link" onClick={footballClicked}>
               Football

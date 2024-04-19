@@ -16,7 +16,7 @@ export default function Projects() {
         picture="https://images.unsplash.com/photo-1581315628079-f093bb040803?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
       /> */}
 
-      <div className="flex font-semibold ml-8">
+      <div className="flex font-normal ml-8">
         <h3 className="mr-8">Please check my GitHub</h3>
         <a
           href="https://github.com/georgeonisiforou?tab=repositories"
@@ -28,7 +28,7 @@ export default function Projects() {
         </a>
       </div>
 
-      <div className="flex font-semibold ml-8">
+      <div className="flex font-normal ml-8">
         <h3 className="mr-8">Or have a look at my resume</h3>
         <span className="pdf">
           <a href="../CV/CV.pdf" download>
