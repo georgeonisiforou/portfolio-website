@@ -3,7 +3,7 @@ import Work from "./Work";
 
 export default function WorkExperience() {
   return (
-    <div className="mt-48 w-screen">
+    <div className="mt-48 w-screen p-4">
       <h3 className="sm:ml-32 sm:m-4  text-5xl mb-8 ml-4">Work Experience</h3>
       <div className="flex sm:flex-row flex-col sm:p-4 sm:ml-16 p-8 gap-4 flex-wrap justify-start">
         <Work
@@ -44,12 +44,12 @@ export default function WorkExperience() {
           }
         />
 
-        <Work
+        {/* <Work
           company="What's next?"
           position="Your next web developer?"
           period="Now - We run out of project ideas"
           description="Contact me and let's bring projects to life."
-        />
+        /> */}
       </div>
     </div>
   );

@@ -25,7 +25,7 @@ body {
   font-family: "PP Radio Grotesk", "Roboto";
   scroll-behavior: smooth;
   overflow-x: hidden;
-  background: #fdefef;
+  background: #fff;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -33,7 +33,7 @@ body {
 
 .layoutContainer {
   /* background: #cdd0cb; */
-  background: #fdefef;
+  background: #fff;
 }
 
 .base-page-size {
@@ -1046,9 +1046,9 @@ a:active {
   overflow: hidden;
 }
 
-.workContainer:hover {
+/* .workContainer:hover {
   transform: scale(1.05);
-}
+} */
 
 .workContainer:hover .card-title::after {
   transform: scale(1);
