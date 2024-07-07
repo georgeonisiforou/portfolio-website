@@ -72,7 +72,7 @@ const Header = () => {
         </div>
 
         <div className="text-slate-800 text-sm lg:text-xl currentWork headerCurrentJob invisible lg:visible ">
-          Currently Front End Developer at TIOmarkets
+          Currently Software Engineer at Amdocs
         </div>
         <div className="text-slate-800 sm:  text-xl font-medium flex flex-row navBar">
           <ul className="flex flex-row">
