@@ -1,10 +1,16 @@
 import React from "react";
 import { BsFillFileEarmarkPdfFill, BsGithub } from "react-icons/bs";
 import Project from "../components/Project";
+import Seo from "../components/Seo";
 
 export default function Projects() {
   return (
     <div className="flex flex-col p-8 w-screen gap-8 projectsContainer text-3xl lg:mt-24 mt-48 mb-20 lg:mb-0">
+      <Seo
+        title="Projects"
+        description="Selected projects, code samples, and links to George Onisiforou’s work on GitHub."
+        path="/projects"
+      />
       {/* <Project
         title="George Onisiforou"
         description="Personal website/portfolio."

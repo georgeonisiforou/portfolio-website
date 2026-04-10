@@ -5,6 +5,7 @@ import Image from "next/image";
 import travelImages from "../components/travel_images.js";
 import Carousel from "../components/Carousel";
 import "animate.css";
+import Seo from "../components/Seo";
 
 export default function About() {
   const footballHobby =
@@ -38,6 +39,11 @@ export default function About() {
 
   return (
     <div className="sm:p-16 sm:pb-4 p-4 mt-48 mb-2 relative z-0">
+      <Seo
+        title="About"
+        description="About George Onisiforou — frontend-focused software engineer with a background in Computer Science and a passion for clean, user-friendly interfaces."
+        path="/about"
+      />
       <div className="mb-32 sm:w-1/3 relative">
         <p className="sm:font-medium text-xs sm:text-base text-slate-500 ml-1 mb-2">
           GEORGE ONISIFOROU - EST 1990
