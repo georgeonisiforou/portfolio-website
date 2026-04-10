@@ -29,7 +29,7 @@ export default function Projects() {
       <div className="flex font-normal ml-8">
         <h3 className="mr-8">Or have a look at my resume</h3>
         <span className="pdf">
-          <a href="../CV/CV.pdf" download>
+          <a href="/CV/CV.pdf" download>
             <BsFillFileEarmarkPdfFill />
           </a>
         </span>

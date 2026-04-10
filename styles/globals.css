@@ -491,6 +491,7 @@ a:active {
 .email {
   position: relative;
   transition: transform 250ms ease-in;
+  --email-underline-color: rgb(9, 10, 11);
 }
 
 .email:hover {
@@ -507,10 +508,14 @@ a:active {
   height: 5px;
   width: 100%;
 
-  background: rgb(9, 10, 11);
+  background: var(--email-underline-color);
   transform: scaleX(0);
   transition: transform 400ms ease-in;
   transform-origin: right;
+}
+
+.email.email--underline-white {
+  --email-underline-color: #fff;
 }
 
 .email:hover::after {
@@ -734,155 +739,21 @@ a:active {
   font-weight: 500;
   overflow: hidden;
   text-transform: uppercase;
-  white-space: nowrap;
   position: relative;
   width: 100%;
 }
 
-.word1,
-.word2,
-.word3,
-.word4,
-.word5 {
-  font-family: inherit;
-  font-size: inherit;
+/* Rotating words animation (responsive; avoids hard-coded positioning). */
+.contactText {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }
 
-.message {
-  display: block;
-  overflow: hidden;
-  position: absolute;
-  left: 375px;
-  animation: openclose 16s ease-in-out infinite;
-}
-
-@keyframes openclose {
-  0% {
-    top: 0;
-    width: 0;
-  }
-  3% {
-    top: 0;
-    width: 0;
-  }
-  7% {
-    width: 500px;
-  }
-  11% {
-    top: 0;
-    width: 500px;
-  }
-  14% {
-    top: 0;
-    width: 0;
-  }
-  17% {
-    top: -4.5rem;
-    width: 0;
-  }
-  20% {
-    top: -4.5rem;
-    width: 0;
-  }
-  24% {
-    top: -4.5rem;
-    width: 600px;
-  }
-  28% {
-    top: -4.5rem;
-    width: 600px;
-  }
-  31% {
-    top: -4.5rem;
-    width: 0;
-  }
-  34% {
-    top: -9rem;
-    width: 0;
-  }
-  37% {
-    top: -9rem;
-    width: 0;
-  }
-  41% {
-    top: -9rem;
-    width: 600px;
-  }
-  45% {
-    top: -9rem;
-    width: 600px;
-  }
-  48% {
-    top: -9rem;
-    width: 0;
-  }
-  51% {
-    top: -9rem;
-    width: 0;
-  }
-  54% {
-    top: -13.5rem;
-    width: 0;
-  }
-  57% {
-    top: -13.5rem;
-    width: 0;
-  }
-  61% {
-    top: -13.5rem;
-    width: 600px;
-  }
-  65% {
-    top: -13.5rem;
-    width: 600px;
-  }
-  68% {
-    top: -13.5rem;
-    width: 0;
-  }
-  71% {
-    top: -13.5rem;
-    width: 0;
-  }
-  74% {
-    top: -18rem;
-    width: 0;
-  }
-  77% {
-    top: -18rem;
-    width: 0;
-  }
-  81% {
-    top: -18rem;
-    width: 600px;
-  }
-  85% {
-    top: -18rem;
-    width: 600px;
-  }
-  89% {
-    top: -18rem;
-    width: 0;
-  }
-  92% {
-    top: -18rem;
-    width: 0;
-  }
-  95% {
-    top: 0;
-    width: 0;
-  }
-
-  98% {
-    top: 0;
-    width: 0;
-  }
-
-  100% {
-    top: 0;
-    width: 0;
-  }
-}
+.contactType {
+  font: inherit;
+ }
 
 @keyframes opencloseSmallScreen {
   0% {

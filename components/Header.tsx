@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useId, useState } from "react";
 import Link from "next/link";
 import { GoLocation } from "react-icons/go";
 import { FiMenu } from "react-icons/fi";
@@ -6,39 +6,40 @@ import { IoMdCloseCircle } from "react-icons/io";
 import { Fade } from "react-awesome-reveal";
 
 const Header = () => {
-  const [toggle, handleToggle] = useState(true);
+  const mobileMenuId = useId();
+  const [isSticky, setIsSticky] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   useEffect(() => {
-    window.addEventListener("scroll", isSticky);
+    const onScroll = () => {
+      setIsSticky(window.scrollY >= 80);
+    };
+
+    onScroll();
+    window.addEventListener("scroll", onScroll);
     return () => {
-      window.removeEventListener("scroll", isSticky);
+      window.removeEventListener("scroll", onScroll);
     };
   }, []);
 
-  const isSticky = () => {
-    const header = document.querySelector(".header");
-    const headerLocation = document.querySelector(".headerLocation");
-    const headerCurrentJob = document.querySelector(".headerCurrentJob");
-    const scrollTop = window.scrollY;
-    scrollTop >= 80
-      ? (headerLocation?.classList.add("hide-element"),
-        headerCurrentJob?.classList.add("hide-element"),
-        header?.classList.add("is-sticky"))
-      : (headerLocation?.classList.remove("hide-element"),
-        headerCurrentJob?.classList.remove("hide-element"),
-        header?.classList.remove("is-sticky"));
-  };
+  useEffect(() => {
+    if (!isMenuOpen) return;
 
-  const openMenu = () => {
-    const menu = document.querySelector(".mobileMenu");
-    handleToggle(!toggle);
-    toggle
-      ? menu?.classList.add("showMenu")
-      : menu?.classList.remove("showMenu");
-  };
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setIsMenuOpen(false);
+    };
+
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [isMenuOpen]);
 
   return (
     <div className="z-50 relative ">
-      <div className="flex flex-row w-full justify-between content-center items-center p-8 header z-50 top-0">
+      <div
+        className={`flex flex-row w-full justify-between content-center items-center p-8 header z-50 top-0${
+          isSticky ? " is-sticky" : ""
+        }`}
+      >
         <div>
           <h1 className=" text-2xl sm:text-5xl text-slate-800 fancy-title">
             <Link href="/">
@@ -51,11 +52,22 @@ const Header = () => {
           </h1>
         </div>
 
-        <button onClick={openMenu} className="toggleMenu">
+        <button
+          type="button"
+          onClick={() => setIsMenuOpen((v) => !v)}
+          className="toggleMenu"
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isMenuOpen}
+          aria-controls={mobileMenuId}
+        >
           <FiMenu />
         </button>
 
-        <div className="flex flex-col headerLocation invisible lg:visible ">
+        <div
+          className={`flex flex-col headerLocation invisible lg:visible${
+            isSticky ? " hide-element" : ""
+          }`}
+        >
           <div className="text-slate-800 text-sm lg:text-xl">
             Based in Limassol
           </div>
@@ -71,7 +83,11 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="text-slate-800 text-sm lg:text-xl currentWork headerCurrentJob invisible lg:visible ">
+        <div
+          className={`text-slate-800 text-sm lg:text-xl currentWork headerCurrentJob invisible lg:visible${
+            isSticky ? " hide-element" : ""
+          }`}
+        >
           Currently Software Engineer at Amdocs
         </div>
         <div className="text-slate-800 sm:  text-xl font-medium flex flex-row navBar">
@@ -90,7 +106,14 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      <div className="mobileMenu z-30  text-slate-100">
+      <div
+        id={mobileMenuId}
+        className={`mobileMenu z-30 text-slate-100${
+          isMenuOpen ? " showMenu" : ""
+        }`}
+        role="dialog"
+        aria-modal="true"
+      >
         <div className="uppercase font-bold text-lg absolute top-8 left-8">
           George Onisiforou
           <br />
@@ -103,35 +126,32 @@ const Header = () => {
           <br />
           Cyprus
         </div>
-        <button className="text-5xl absolute top-8 right-8" onClick={openMenu}>
+        <button
+          type="button"
+          className="text-5xl absolute top-8 right-8"
+          onClick={() => setIsMenuOpen(false)}
+          aria-label="Close menu"
+        >
           <IoMdCloseCircle />
         </button>
         <div className="mobMenuItem">
-          <Link href="/">
-            <a href="" onClick={openMenu}>
-              Home
-            </a>
+          <Link href="/" onClick={() => setIsMenuOpen(false)}>
+            Home
           </Link>
         </div>
         <div className="mobMenuItem">
-          <Link href="/projects">
-            <a href="" onClick={openMenu}>
-              Projects
-            </a>
+          <Link href="/projects" onClick={() => setIsMenuOpen(false)}>
+            Projects
           </Link>
         </div>
         <div className="mobMenuItem">
-          <Link href="/about">
-            <a href="" onClick={openMenu}>
-              About
-            </a>
+          <Link href="/about" onClick={() => setIsMenuOpen(false)}>
+            About
           </Link>
         </div>
         <div className="mobMenuItem">
-          <Link href="/contact">
-            <a href="" onClick={openMenu}>
-              Contact
-            </a>
+          <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
+            Contact
           </Link>
         </div>
       </div>

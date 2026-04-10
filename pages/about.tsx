@@ -110,12 +110,12 @@ export default function About() {
           </h3>
         </div>
         <div className="flex flex-col lg:flex-row justify-between sm:text-2xl p-4 sm:p-0 hobbyContainer">
-          <p
+          <div
             className="lg:w-full text-justify flex justify-center items-center hobbyText"
             key={btnClicked}
           >
-            <div className="sm:w-full lg:w-2/4">{btnClicked}</div>
-          </p>
+            <p className="sm:w-full lg:w-2/4">{btnClicked}</p>
+          </div>
           {/* <div className="lg:w-2/3 max-w-screen-lg lg:mr-12 lg:relative mt-8 lg:mt-0">
             <Carousel />
           </div> */}
