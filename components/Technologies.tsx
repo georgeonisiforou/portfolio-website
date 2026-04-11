@@ -1,60 +1,44 @@
 import React from "react";
-import { BiRightArrow } from "react-icons/bi";
-import Reveal from "react-awesome-reveal";
-import { keyframes } from "@emotion/react";
-import Technology from "./Technology";
+
+const STACK = [
+  "HTML5",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+  "Node.js",
+  "React",
+  "Next.js",
+  "Git",
+  "GitHub",
+  "Styled Components",
+  "Tailwind CSS",
+  "Sanity",
+  "Framer Motion",
+];
 
 export default function Technologies() {
-  const technologies1 = [
-    { name: "HTML5", image: "", id: 1 },
-    { name: "CSS", image: "", id: 2 },
-    { name: "JavaScript", image: "", id: 3 },
-    { name: "TypeScript", image: "", id: 4 },
-    { name: "Node.js", image: "", id: 5 },
-    { name: "React", image: "", id: 6 },
-    { name: "Next.js", image: "", id: 7 },
-  ];
-
-  const technologies2 = [
-    { name: "Git", image: "", id: 8 },
-    { name: "GitHub", image: "", id: 9 },
-    { name: "Styled components", image: "", id: 10 },
-    { name: "TailwindCSS", image: "", id: 11 },
-    { name: "Sanity", image: "", id: 12 },
-    { name: "Framer Motion", image: "", id: 13 },
-  ];
-
-  const customAnimation = keyframes`
-  from {
-    opacity: 0;
-    transform: translate(100px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate(0);
-  }
-`;
-
   return (
-    <div className="mt-48 technologiesContainer">
-      <h3 className="sm:ml-32 sm:m-4  text-5xl mb-8 ml-4">Technologies</h3>
-      <div className="flex flex-row justify-center text-center sm:p-16 sm:text-3xl font-light">
-        <div className="lg:pr-32">
-          <ul>
-            {technologies1.map((tech, key) => (
-              <Technology tech={tech} key={key} />
-            ))}
-          </ul>
-        </div>
-        <div className="lg:pl-32 pl-8">
-          <ul>
-            {technologies2.map((tech, key) => (
-              <Technology tech={tech} key={key} />
-            ))}
-          </ul>
-        </div>
+    <section className="mx-auto max-w-content px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+      <div className="max-w-2xl">
+        <p className="text-sm font-semibold uppercase tracking-widest text-accent">
+          Toolkit
+        </p>
+        <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-ink sm:text-4xl">
+          Technologies
+        </h2>
+        <p className="mt-4 text-lg text-ink-muted">
+          Tools and libraries I use day to day.
+        </p>
       </div>
-    </div>
+      <ul className="mt-10 flex flex-wrap gap-2 sm:gap-3">
+        {STACK.map((name) => (
+          <li key={name}>
+            <span className="inline-flex rounded-full border border-slate-200 bg-surface-elevated px-4 py-2 text-sm font-medium text-ink shadow-soft transition-colors hover:border-accent/30 hover:bg-accent-muted/40">
+              {name}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 }

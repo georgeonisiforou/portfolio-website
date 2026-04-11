@@ -3,17 +3,24 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 import { TypeAnimation } from "react-type-animation";
 
 export default function ContactPage() {
-  const [copyText, setCopyText] = useState("Click to copy");
+  const [copyText, setCopyText] = useState("Copy email");
 
   const copied = () => {
-    setCopyText("Email copied");
+    setCopyText("Copied");
+    setTimeout(() => setCopyText("Copy email"), 2500);
   };
 
   return (
-    <div className="contactContainer bg-slate-800 text-slate-100">
-      <div className="flex sm:justify-start sm:items-center lg:pl-16 pt-40 mt-32 uppercase">
-        <div className="contactText">
-          <span>Message me to</span>{" "}
+    <div className="mx-auto max-w-content px-4 pb-20 pt-8 sm:px-6 lg:px-8 lg:pb-28 lg:pt-12">
+      <div className="max-w-3xl">
+        <p className="text-sm font-semibold uppercase tracking-widest text-accent">
+          Contact
+        </p>
+        <h1 className="mt-3 font-display text-4xl font-bold tracking-tight text-ink sm:text-5xl">
+          Say hello
+        </h1>
+        <p className="mt-6 flex flex-wrap items-baseline gap-x-2 gap-y-2 text-xl text-ink-muted sm:text-2xl">
+          <span>Message me to</span>
           <TypeAnimation
             sequence={[
               "work together",
@@ -28,30 +35,31 @@ export default function ContactPage() {
               1600,
             ]}
             wrapper="span"
-            className="contactType"
+            className="font-semibold text-accent"
             speed={55}
             deletionSpeed={70}
             repeat={Infinity}
             cursor
           />
-        </div>
+        </p>
       </div>
 
-      <div className="flex p-8 ml-8 mb-4 mt-32">
-        <CopyToClipboard text="georgeon2016@gmail.com">
-          <div className="lg:text-6xl sm:text-4xl text-2xl flex flex-col items-center emailContainer">
-            <h3 className="clickToCopy text-2xl">{copyText}</h3>
-            <button
-              type="button"
-              onClick={copied}
-              className="email email--underline-white"
-            >
+      <div className="mt-14 max-w-2xl rounded-3xl border border-slate-200/80 bg-surface-elevated p-8 shadow-soft sm:p-10">
+        <p className="text-sm font-medium text-ink-muted">Email</p>
+        <CopyToClipboard text="georgeon2016@gmail.com" onCopy={copied}>
+          <button
+            type="button"
+            className="mt-3 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-4 text-left transition-colors hover:border-accent/40 hover:bg-accent-muted/30 sm:px-6"
+          >
+            <span className="text-xs font-semibold uppercase tracking-wider text-accent">
+              {copyText}
+            </span>
+            <span className="mt-1 block break-all font-mono text-lg font-medium text-ink">
               georgeon2016@gmail.com
-            </button>
-          </div>
+            </span>
+          </button>
         </CopyToClipboard>
       </div>
     </div>
   );
 }
-
