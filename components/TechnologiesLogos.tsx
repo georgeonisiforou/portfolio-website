@@ -14,103 +14,49 @@ import framerlogo from "../public/assets/images/framer-svgrepo-com.svg";
 import styledcomponentslogo from "../public/assets/images/styled-components-1.svg";
 import typescriptLogo from "../public/assets/images/typescript-svgrepo-com.svg";
 
-import { keyframes } from "@emotion/react";
+const LOGOS = [
+  { src: htmllogo, label: "HTML" },
+  { src: csslogo, label: "CSS" },
+  { src: jslogo, label: "JavaScript" },
+  { src: typescriptLogo, label: "TypeScript" },
+  { src: reactlogo, label: "React" },
+  { src: nextjslogo, label: "Next.js" },
+  { src: nodejslogo, label: "Node.js" },
+  { src: tailwindlogo, label: "Tailwind" },
+  { src: styledcomponentslogo, label: "Styled Components" },
+  { src: gitlogo, label: "Git" },
+  { src: githublogo, label: "GitHub" },
+  { src: sanitylogo, label: "Sanity" },
+  { src: framerlogo, label: "Framer Motion" },
+];
 
 export default function TechnologiesLogos() {
-  const logos = [
-    csslogo,
-    gitlogo,
-    githublogo,
-    htmllogo,
-    jslogo,
-    typescriptLogo,
-    nextjslogo,
-    nodejslogo,
-    reactlogo,
-    tailwindlogo,
-    sanitylogo,
-    framerlogo,
-    styledcomponentslogo,
-  ];
-
-  const customAnimation = keyframes`
-  from {
-    opacity: 0;
-    transform: scale(0);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-`;
-
   return (
-    <div className="flex justify-center m-8">
-      <div className=" flex justify-center sm:p-8 flex-wrap max-w-5xl">
-        {logos.map((logo, key) => (
-          <div key={key} className="sm:m-10 m-2">
-            <ul className="logoUl">
-              <li>
-                <div className="imageWrapper">
-                  {" "}
-                  <Image
-                    src={logo}
-                    width="70px"
-                    height="70px"
-                    alt="tech-logo"
-                    key=""
-                    className="imageLogo"
-                  />
-                </div>
-                <div className="imageWrapper">
-                  {" "}
-                  <Image
-                    src={logo}
-                    width="70px"
-                    height="70px"
-                    alt="tech-logo"
-                    key=""
-                    className="imageLogo"
-                  />
-                </div>
-                <div className="imageWrapper">
-                  {" "}
-                  <Image
-                    src={logo}
-                    width="70px"
-                    height="70px"
-                    alt="tech-logo"
-                    key=""
-                    className="imageLogo"
-                  />
-                </div>
-                <div className="imageWrapper">
-                  {" "}
-                  <Image
-                    src={logo}
-                    width="70px"
-                    height="70px"
-                    alt="tech-logo"
-                    key=""
-                    className="imageLogo"
-                  />
-                </div>
-                <div className="imageWrapper">
-                  <Image
-                    src={logo}
-                    width="70px"
-                    height="70px"
-                    alt="tech-logo"
-                    key=""
-                    className="imageLogo"
-                  />
-                </div>
-              </li>
-            </ul>
-          </div>
-        ))}
+    <section className="border-y border-slate-200/80 bg-surface-elevated py-12 sm:py-16">
+      <div className="mx-auto max-w-content px-4 sm:px-6 lg:px-8">
+        <p className="text-center text-sm font-medium text-ink-muted">
+          Stack I reach for most often.
+        </p>
+        <ul className="mt-8 grid grid-cols-3 gap-3 sm:grid-cols-4 sm:gap-4 md:grid-cols-5 lg:grid-cols-6">
+          {LOGOS.map(({ src, label }) => (
+            <li key={label}>
+              <div
+                title={label}
+                className="group flex aspect-square flex-col items-center justify-center rounded-2xl border border-slate-200/80 bg-slate-50/50 p-3 shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:border-slate-300 hover:bg-white hover:shadow-card sm:p-4"
+              >
+                <Image
+                  src={src}
+                  width={48}
+                  height={48}
+                  alt=""
+                  className="h-9 w-9 object-contain opacity-80 grayscale transition-all group-hover:opacity-100 group-hover:grayscale-0 sm:h-10 sm:w-10"
+                />
+                <span className="sr-only">{label}</span>
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
-    </div>
+    </section>
   );
 }

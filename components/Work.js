@@ -1,5 +1,10 @@
 import React from "react";
-import { motion } from "framer-motion";
+
+const accentBars = [
+  "from-violet-500 to-indigo-600",
+  "from-indigo-500 to-sky-500",
+  "from-emerald-500 to-teal-600",
+];
 
 export default function Work({
   company,
@@ -8,54 +13,49 @@ export default function Work({
   description,
   highlights = [],
   skills = [],
-  imageUrl,
+  accentIndex = 0,
 }) {
-  return (
-    <article className="group overflow-hidden rounded-2xl shadow-xl ring-1 ring-black/5 bg-slate-900">
-      <div className="relative aspect-[16/9]">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: imageUrl ? `url(${imageUrl})` : undefined,
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/55 to-black/20" />
+  const bar = accentBars[accentIndex % accentBars.length];
 
-        <div className="absolute inset-0 p-6 flex flex-col justify-between">
-          <div className="max-w-[92%]">
-            <h3 className="text-2xl sm:text-3xl font-extrabold text-white leading-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.65)]">
+  return (
+    <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200/80 bg-surface-elevated shadow-soft transition-shadow duration-300 hover:shadow-card">
+      <div className={`h-1.5 bg-gradient-to-r ${bar}`} aria-hidden />
+      <div className="flex flex-1 flex-col p-6 sm:p-7">
+        <div className="flex flex-wrap items-start justify-between gap-3 border-b border-slate-100 pb-5">
+          <div>
+            <h3 className="font-display text-xl font-bold tracking-tight text-ink sm:text-2xl">
               {company}
             </h3>
-            <p className="text-base sm:text-lg text-slate-100/90 mt-1 drop-shadow-[0_2px_10px_rgba(0,0,0,0.65)]">
+            <p className="mt-1 text-sm font-medium text-accent sm:text-base">
               {position}
             </p>
           </div>
-
-          <div className="flex items-end justify-between gap-4">
-            <p className="text-xs sm:text-sm text-slate-100/90">{period}</p>
-          </div>
+          <time className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-ink-muted">
+            {period}
+          </time>
         </div>
-      </div>
 
-      <div className="p-5 text-slate-100">
-        <p className="text-slate-200 leading-relaxed text-sm sm:text-base">
+        <p className="mt-5 flex-1 text-sm leading-relaxed text-ink-muted sm:text-base">
           {description}
         </p>
 
         {highlights?.length ? (
-          <ul className="mt-4 space-y-2 text-slate-200 text-sm sm:text-base list-disc pl-5">
+          <ul className="mt-4 space-y-2 text-sm text-ink-muted sm:text-base">
             {highlights.map((item) => (
-              <li key={item}>{item}</li>
+              <li key={item} className="flex gap-2">
+                <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent" />
+                {item}
+              </li>
             ))}
           </ul>
         ) : null}
 
         {skills?.length ? (
-          <ul className="mt-4 flex flex-wrap gap-2">
+          <ul className="mt-6 flex flex-wrap gap-2">
             {skills.map((skill) => (
               <li
                 key={skill}
-                className="text-[11px] sm:text-xs px-2.5 py-1 rounded-full bg-white/10 text-slate-100 ring-1 ring-white/10"
+                className="rounded-md border border-slate-200 bg-slate-50 px-2.5 py-1 text-xs font-medium text-ink sm:text-sm"
               >
                 {skill}
               </li>
